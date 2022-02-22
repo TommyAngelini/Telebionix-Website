@@ -11,273 +11,338 @@
     <!-- NAVBAR -->
     {{> partials/navbar classList="navbar-light bg-white border-bottom" container="container-fluid" button="primary"}}
 
-    <!-- WELCOME -->
-    <section class="py-8 py-md-11 border-bottom">
+    <!-- ABOUT US -->
+    <section class="py8 py-md-11 border-bottom" style="background:#E4F7FF !important;">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
+        <div class="row justify-content-start">
+          <div class="col-4 col-md-10 col-lg-8 text-start p-10">
+            
+            <h4 class="text-primary">
+              About Us
+            </h4>
 
-            <!-- Headin -->
-            <h1 class="display-2">
-              Small team. Big hearts.
+            <h1 class="display-4">
+                Telebionix is a MedTech innovation company founded in California with a 
+                <span class="text-primary">central objective:</span> to improve access 
+                to healthcare and, in turn, <span class="text-primary">save lives.</span>
+
             </h1>
-
-            <!-- Text -->
-            <p class="lead text-muted mb-7 mb-md-9">
-              Our focus is always on finding the best people to work with. Our bar is high, but you look ready to take on the challenge.
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-12">
-
-            <!-- Image -->
-            <div class="row gx-4">
-              <div class="col-4">
-
-                <img class="img-fluid rounded shadow-lg" src="assets/img/photos/photo-16.jpg" alt="...">
-
-              </div>
-              <div class="col-3">
-
-                <img class="img-fluid rounded shadow-lg mb-4" src="assets/img/photos/photo-17.jpg" alt="...">
-
-                <img class="img-fluid rounded shadow-lg" src="assets/img/photos/photo-18.jpg" alt="...">
-
-              </div>
-              <div class="col-5">
-
-                <div class="row gx-5 mb-4">
-                  <div class="col-5">
-
-                    <img class="img-fluid rounded shadow-lg" src="assets/img/photos/photo-19.jpg" alt="...">
-
-                  </div>
-                  <div class="col-7">
-
-                    <img class="img-fluid rounded shadow-lg" src="assets/img/photos/photo-20.jpg" alt="...">
-
-                  </div>
-                </div> <!-- / .row -->
-
-                <img class="img-fluid rounded shadow-lg" src="assets/img/photos/photo-21.jpg" alt="...">
-
-              </div>
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- LOCATION -->
-    <section class="pt-8 pt-md-0 border-bottom bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6">
-
-            <!-- Map (mobile) -->
-            <div class="ratio ratio-1x1 d-md-none">
-              <div data-map='{"center": [-118.244615, 34.052979], "zoom": 12}'></div>
-            </div>
-
-            <!-- Map -->
-            <div class="position-relative h-100 vw-50 float-end d-none d-md-block">
-
-              <!-- Map -->
-              <div class="h-100 w-100" data-map='{"center": [-118.244615, 34.052979], "zoom": 12}'></div>
-
-              <!-- Shape -->
-              <div class="shape shape-end shape-fluid-y text-light">
-                {{> angles/angle-end}}
-              </div>
-
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6 col-lg-5 offset-lg-1 py-8 py-md-11 py-lg-12">
-
-            <!-- Heading -->
-            <h2>
-              Located in Los Angeles.<br>
-              <span class="text-success">Enjoy <span data-typed='{"strings": ["cultural diversity", "white sand beaches", "sunny weekends"]}'></span>.</span>
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-gray-700 mb-6">
-              We picked our office location to maximize our team's enjoyment! LA's best restaurants are within walking distance, as well are some of the finest coffee shops in the world. Come visit us and you'll agree.
-            </p>
-
-            <!-- Stats -->
-            <div class="d-flex">
-              <div class="pe-5">
-                <h3 class="text-success mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="100" data-aos data-aos-id="countup:in">0</span>%
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Approval
-                </p>
-              </div>
-              <div class="border-start border-gray-300"></div>
-              <div class="px-5">
-                <h3 class="text-success mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="85" data-aos data-aos-id="countup:in">0</span>%
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Sunny days
-                </p>
-              </div>
-              <div class="border-start border-gray-300"></div>
-              <div class="ps-5">
-                <h3 class="text-success mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="52" data-aos data-aos-id="countup:in">0</span>/<span data-countup='{"startVal": 0}' data-to="48" data-aos data-aos-id="countup:in">0</span>
-                </h3>
-                <p class="text-gray-700 mb-0">
-                  Gender ratio
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- COMPANIES -->
-    <section class="py-8 py-md-11">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-7 text-center">
-
-            <!-- Heading -->
-            <h2>
-              We strive to work with the best. <br />
-              The best companies in the world.
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-7 mb-md-9">
-              Landkit is a best place to work with some of the greatest tech companies in the world.
-            </p>
-
-          </div>
-        </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #FF5A5F;">
-              {{> logotype/airbnb}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #0081C9;">
-              {{> logotype/coinbase}}
-            </div>
-
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #DA5988;">
-              {{> logotype/dribbble}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #3F5D87;">
-              {{> logotype/instagram}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #B81D24;">
-              {{> logotype/netflix}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #CB2027;">
-              {{> logotype/pinterest}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #6772E5;">
-              {{> logotype/stripe}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #004F9D;">
-              {{> logotype/facebook}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #CB2027;">
-              {{> logotype/pinterest}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #1F8DED;">
-              {{> logotype/intercom}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #7289DA;">
-              {{> logotype/discord}}
-            </div>
-
-          </div>
-          <div class="col-4 col-md-2">
-
-            <div class="img-fluid img-fluid mb-6 mb-md-8" style="color: #0080FF;">
-              {{> logotype/digital-ocean}}
-            </div>
-
-          </div>
-
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-
-    <!-- SLIDER -->
-    <section>
-      <div class="flickity-button-white flickity-button-inset" data-flickity='{"imagesLoaded": true, "wrapAround": true, "pageDots": false}'>
-        <div class="w-100">
-
-          <!-- Image -->
-          <img src="assets/img/covers/cover-11.jpg" class="img-fluid w-100" alt="...">
-
-          <!-- Shape -->
-          <div class="shape shape-top shape-fluid-x text-white">
-            {{> waves/wave-1}}
           </div>
 
         </div>
-        <div class="w-100">
 
-          <!-- Image -->
-          <img src="assets/img/covers/cover-3.jpg" class="img-fluid w-100" alt="...">
+        <div class="row justify-content-end">
+          <div class="col-4 col-md-10 col-lg-8 text-start">
+            
+            <h1 class="display-5 pb-10">
+                We are here to build tools for the future of healthcare where
+                AI-drive, easy-to-use remote devices will serve as a 
+                <span class="text-primary">solution</span>
+                for doctors, patients, and caregivers.
+  
+            </h1>
+          </div>
+        </div>
 
-          <!-- Shape -->
-          <div class="shape shape-top shape-fluid-x text-white">
-            {{> waves/wave-1}}
+        <div class="row justify-content-center">
+          <div class="col-12">
+
+            <img class="img-fluid rounded shadow-lg" src="assets/img/photos/photo-21.jpg" alt="...">
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-white">
+        {{> curves/curve-3}}
+      </div>
+    </div>
+
+    <!-- OUR STORY -->
+    <section class="py-8 py-md-5">
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-12 col-md-10 col-lg-8 text-start">
+
+            <!-- Headin -->
+            <h1 class="display-2">
+              Our Story
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-7 mb-md-4">
+              Telebionix was founded in 2020 by innovator <b>Widy Medina</b> and serial entrepreneur
+              <b>Aghiath Chbib.</b>
+            </p>
+            <p class="lead mb-7 mb-md-9">
+              They set out on a mission to leverage an international network with access to 
+              world-leading academic research labs and techno-scientific agencies in Europe, the UAE,
+              and the US.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- OUR TEAM -->
+    <section class="py-8 py-md-5 bg-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            
+            <h1 class="display-3 text-white mt-8">
+              Our Team
+            </h1>
+
+            <p class="lead text-white mb-7 mb-md-9 fw-light">
+              Collectively, the team behind Telebionix brings 250+ years of professional 
+              experience in IT, AI, Robotics, Cybersecurity, Medical Devices, Pharmaceuticals,
+              Medical Care, Public Health, and Investment Banking, among other industries.
+            </p>
+          
+          </div>
+         
+        </div>
+
+        <div class="row justify-content-start">
+          <div class="col-12">
+            <h4 class="fw-light text-white p-5">
+              Founding Members
+            </h4>
+          </div>
+        </div>
+
+        <div class="row justify-content-start mt-5">
+          
+          <div class="col-3 align-self-start">
+            
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="..." 
+              style = "height: 220px; width: 220px; border-radius: 10px;">
+            </div>
+       
+          </div>
+         
+          <div class="col-8">
+              <!-- Header -->
+              <h4 class="display-4 text-white fw-bold">Widy Medina • <span class="text-gray-300">CEO, Co-Founder</span></h4>
+              <p class="fs-lg text-white mb-6 mb-md-8">
+                Founder and CEO of two technology companies with vast experience ranging from 
+                robotics, product design, fabrication, automation to electronic assembly of 
+                consumer products, food and beverage tech, biotech, medical devices, and Pharmaceutical
+                industries. <br><br>
+
+                Bi-lingual professional passionate for quality in every customer touchpoint, 
+                user experience, and transformative technologies for a higher quality of life.
+    
+              </p>
           </div>
 
+        </div>
+
+        <div class="row justify-content-start">
+          
+          <div class="col-3 align-self-start">
+            
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="..." 
+              style = "height: 220px; width: 220px; border-radius: 10px;">
+            </div>
+       
+          </div>
+         
+          <div class="col-8">
+              <!-- Header -->
+              <h4 class="display-4 text-white fw-bold">Agiath Chbib • <span class="text-gray-300">COO, Co-Founder</span></h4>
+              <p class="fs-lg text-white mb-6 mb-md-2">
+                Serial entrepreneur with experience co-founding three companies. An award-winning expert in 
+                Cybersecurity. Recognized as one of the Top 50 Global Thought Leaders and Influencers. Advisory Board
+                Member for the CEH (Certified Ethical Hacker). <br><br>
+
+                Tri-lingual professional educated in Germany with an industry focus on Healthcare, Cybersecurity, AI, and a 
+                passion for life-saving transformational technologies to improve people's lives.
+    
+              </p>
+          </div>
+
+        </div>
+
+        <div class="row justify-content-start mt-8">
+          <div class="col-12">
+            <h4 class="fw-light text-white p-5">
+              Advisory Board
+            </h4>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-4 text-center">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-3.jpg" alt="..."/>
+            </div>
+            
+            <h5 class="text-white mt-3"><strong>Samer Ellahham, MD</strong></h5>
+            <p class="text-muted">Medical Tech & AI Applications Advisor</p>
+
+          </div>
+
+          <div class="col-4 text-center">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="..."/>
+            </div>
+            
+            <h5 class="text-white mt-3"><strong>Samer Ellahham, MD</strong></h5>
+            <p class="text-muted">Medical Tech & AI Applications Advisor</p>
+
+          </div>
+
+          <div class="col-4 text-center">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="..."/>
+            </div>
+            
+            <h5 class="text-white mt-3"><strong>Samer Ellahham, MD</strong></h5>
+            <p class="text-muted">Medical Tech & AI Applications Advisor</p>
+
+          </div>
+
+          
+          
+        </div>
+
+        <div class="row justify-content-center mt-8">
+          <div class="col-4 text-center">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-4.jpg" alt="..."/>
+            </div>
+            
+            <h5 class="text-white mt-3"><strong>Samer Ellahham, MD</strong></h5>
+            <p class="text-muted">Medical Tech & AI Applications Advisor</p>
+
+          </div>
+
+          <div class="col-4 text-center">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-3.jpg" alt="..."/>
+            </div>
+            
+            <h5 class="text-white mt-3"><strong>Samer Ellahham, MD</strong></h5>
+            <p class="text-muted">Medical Tech & AI Applications Advisor</p>
+
+          </div>
+
+          <div class="col-4 text-center">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="..."/>
+            </div>
+            
+            <h5 class="text-white mt-3"><strong>Samer Ellahham, MD</strong></h5>
+            <p class="text-muted">Medical Tech & AI Applications Advisor</p>
+
+          </div>
+
+          
+          
+        </div>
+
+        <div class="row justify-content-center mt-8">
+          <div class="col-4 text-center">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-3.jpg" alt="..."/>
+            </div>
+            
+            <h5 class="text-white mt-3"><strong>Samer Ellahham, MD</strong></h5>
+            <p class="text-muted">Medical Tech & AI Applications Advisor</p>
+
+          </div>
+
+          <div class="col-4 text-center">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="..."/>
+            </div>
+            
+            <h5 class="text-white mt-3"><strong>Samer Ellahham, MD</strong></h5>
+            <p class="text-muted">Medical Tech & AI Applications Advisor</p>
+
+          </div>
+
+          <div class="col-4 text-center">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-4.jpg" alt="..."/>
+            </div>
+            
+            <h5 class="text-white mt-3"><strong>Samer Ellahham, MD</strong></h5>
+            <p class="text-muted">Medical Tech & AI Applications Advisor</p>
+
+          </div>
+
+          
+          
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OUR VALUES -->
+    <section class="py-8 py-md-11">
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-xs-12 col-sm-6 col-md-8">
+            
+            <h1 class="display-3 mt-8">
+              Our Values
+            </h1>
+      
+          </div>
+        </div>
+        
+        
+        <div class="row justify-content-start">
+          <div class="col-xs-12 col-sm-6 col-md-8">
+
+            <img class="img-fluid rounded shadow-lg" src="assets/img/photos/photo-16.jpg" alt="...">
+
+            
+          </div>
+          <div class="col-xs-6 col-md-4">
+            
+            <h1 class="display-5 text-dark">
+              Human-Centered
+            </h1>
+
+            <p class="text-muted">Everything we do is for our users, our team, and our partners.</p>
+
+            <h1 class="display-5 text-dark">
+              Respect for time
+            </h1>
+
+            <p class="text-muted">Time is the most precious commodity in our lives. From user experience to 
+              team meetings, we're not here to waste it.
+            </p>
+
+            <h1 class="display-5 text-dark">
+              Diversity is in our DNA
+            </h1>
+
+            <p class="text-muted">Our team, customers and partners come from all walks of life and are all deeply valued.
+              Gender, race, ethnicity is not what defines us. Our passions, commitment, and words do.
+            </p>
+
+            <h1 class="display-5 text-dark">
+              Diverge, rebel, but improve
+            </h1>
+
+            <p class="text-muted">We embrace a growth mindset. We rebel against the status quo. We embrace open inputs. 
+              We grow and improve from it.
+            </p>
+          
+          </div>
         </div>
       </div>
     </section>
@@ -303,7 +368,7 @@
 
             <!-- Button -->
             <a href="#!" class="btn btn-primary lift">
-              Apply now
+              Contact Us
             </a>
 
           </div>
@@ -312,7 +377,7 @@
     </section>
 
     <!-- FOOTER -->
-    {{> partials/footer classList="bg-white"}}
+    {{> partials/footer classList="bg-gray-800"}}
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
