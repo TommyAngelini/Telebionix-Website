@@ -37,18 +37,9 @@
             <h1 class="display-5 pb-10">
                 We are here to build tools for the future of healthcare where
                 AI-drive, easy-to-use remote devices will serve as a 
-                <span class="text-primary">solution</span>
-                for doctors, patients, and caregivers.
+                <b><span class="text-primary" data-typed='{"strings": ["solution for doctors. ^1000", "solution for patients. ^1000", "solution for caregivers. ^1000"]}'></span></b>
   
             </h1>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-12">
-
-            <img class="img-fluid rounded shadow-lg" src="assets/img/photos/photo-21.jpg" alt="..." data-aos="fade-up">
-
           </div>
         </div>
 
@@ -68,14 +59,29 @@
       </div>
     </section>
 
+    <!-- PHOTO -->
+  <section style="height:250px">
+    <div class="container py-2">
+      <div class="row justify-content-center">
+        <div class="col-12">
+  
+          <img class="img-fluid rounded shadow-lg position-relative m-2" src="assets/img/tbx/about-us-photo-1.png" alt="..." data-aos="fade-up" style="top:-200px; left:18%; height:80%; width:auto;">
+  
+        </div>
+      </div>
+  
+    </div>
+  </section>
+    
     <!-- OUR STORY -->
-    <section class="py-8 py-md-5">
+    <section class="py-8 py-md-7 m-3">
       <div class="container">
+        
         <div class="row justify-content-start">
-          <div class="col-12 col-md-10 col-lg-5 text-start mr-10">
-            <img src="assets/img/tbx/circle-wave.svg" style="width: 400px;" alt="" class="img-responsive" data-aos="fade-right">
+          <div class="col-12 col-md-10 col-lg-2 text-start mr-10">
+            <img src="assets/img/tbx/circle-wave.svg" style="width: 400px; top:200px" alt="" class="img-responsive position-relative" data-aos="fade-up-right">
           </div>
-          <div class="col-12 col-md-10 col-lg-7 text-start">
+          <div class="col-12 col-md-10 col-lg-10 text-start">
 
             <!-- Heading -->
             <h1 class="display-2" data-aos="fade-left">
@@ -88,16 +94,15 @@
               <b>Aghiath Chbib.</b>
             </p>
             <p class="lead mb-7 mb-md-9" data-aos="fade-left" data-aos-delay="200"> 
-              They set out on a mission to leverage an international network with access to 
-              world-leading academic research labs and techno-scientific agencies in Europe, the UAE,
-              and the US.
+              Many of us at Telebionix come from a background that understands what it means to not have access to healthcare and the challenges families 
+              face when caring for their loved ones who may be thousands of miles away. Coupled with the right tools to make a difference, our background 
+              fueled us to make Remosense a reality — a solution for those who need accessible routine checkups from the comfort of their home.
             </p>
           </div>
           
         </div>
       </div>
     </section>
-
 
     <!-- OUR TEAM -->
     <section class="py-8 py-md-5 bg-dark">
@@ -110,7 +115,7 @@
             </h1>
 
             <p class="lead text-white mb-7 mb-md-9 fw-light" data-aos="fade-up">
-              Collectively, the team behind Telebionix brings 250+ years of professional 
+              Collectively, the team behind Telebionix brings <b><span data-countup='{"startVal": 0}' data-to="250" data-aos data-aos-id="countup:in" data-aos-delay="1000"></span>+</b> years of professional 
               experience in IT, AI, Robotics, Cybersecurity, Medical Devices, Pharmaceuticals,
               Medical Care, Public Health, and Investment Banking, among other industries.
             </p>
@@ -358,9 +363,9 @@
 
     <!-- CTA -->
     <section class="pt-6 pt-md-8">
-      <div class="container pb-6 pb-md-8 border-bottom">
-        <div class="row align-items-center">
-          <div class="col-12 col-md">
+      <div class="container pb-6 pb-md-8">
+        <div class="row align-items-center pb-10">
+          <div class="col-12 col-md"  data-aos="fade-up">
 
             <!-- Heading -->
             <h3 class="fw-bold mb-1">
@@ -373,10 +378,10 @@
             </p>
 
           </div>
-          <div class="col-12 col-md-auto">
+          <div class="col-12 col-md-auto"  data-aos="fade-up">
 
             <!-- Button -->
-            <a href="#!" class="btn btn-primary lift">
+            <a href="#!" class="btn btn-primary lift" >
               Contact Us
             </a>
 
@@ -384,6 +389,23 @@
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
+
+    <!-- FOOTER WAVE -->
+    <section class="pt-10">
+    
+      <div class="position-relative d-none d-xl-block">
+        <div class="shape shape-bottom shape-fluid-x text-bg-800" style="color:#E4F7FF; transform: scaleX(-1);">
+          {{> curves/curve-2}}
+        </div>
+  
+  
+      <div class="position-relative d-none d-xl-block">
+        <div class="shape shape-bottom shape-fluid-x text-bg-800" style="color:#015193;">
+          {{> curves/curve-2}}
+        </div>
+      
+   
+      </section>
 
     <!-- FOOTER -->
     {{> partials/footer classList="bg-gray-800"}}
