@@ -24,6 +24,21 @@
 // Custom colors
 
 .btn-white {
+  background-color: $black;
+  color: $primary;
+
+  &:hover, &:focus {
+    background-color: $white;
+    color: darken($primary, 5%);
+  }
+
+  &.active {
+    background-color: darken($white, 5%);
+    color: darken($primary, 5%);
+  }
+}
+
+.btn-remosense {
   background-color: $white;
   color: $primary;
 
