@@ -38,18 +38,57 @@
   }
 }
 
-.btn-remosense {
-  background-color: $white;
-  color: $primary;
+.btn-switch-on {
+  background-color: white;
+  color: #0A2841;
 
   &:hover, &:focus {
-    background-color: $white;
-    color: darken($primary, 5%);
+    background-color: darken($white, 5%);
+    color: darken(#0A2841, 5%);
   }
 
   &.active {
-    background-color: darken($white, 5%);
-    color: darken($primary, 5%);
+    background-color: darken($white, 10%);
+    color: darken(#0A2841, 5%);
+  }
+}
+
+.btn-switch-off {
+  border-color: $white;
+  color: $white;
+
+  &:hover, &:focus {
+    background-color: darken($blue, 30%);
+    border-color: $white;
+    color: $white;
+  }
+
+  &.active {
+    background-color: #0A2841;
+    border-color: $white !important;
+    color: $white;
+  }
+}
+
+.btn-outline-dark {
+  border-color: #0A2841;
+  color: #0A2841;
+
+}
+
+.btn-remosense {
+  background-image: linear-gradient(to bottom, #015193 0%, #4B86A8 100%);
+  color: $white;
+
+  &:hover, &:focus {
+    background-image: linear-gradient(to bottom, #015193 0%, #4B86A8 100%);
+    background-position: top center;
+    color: white;
+  }
+
+  &.active {
+    background-image: linear-gradient(to bottom, #015193 0%, #4B86A8 100%);
+    color: white;
   }
 }
 
@@ -114,7 +153,7 @@
   color: $body-color;
 
   &:hover, &:focus {
-    background-color: darken($white, 5%);
+    background-color: darken($blue, 30%);
     border-color: $gray-400;
     color: $body-color;
   }
