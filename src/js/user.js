@@ -9,7 +9,9 @@ $(function() {
       //hide all sections
       $(".content-section").hide();
       //show the section depending on which button was clicked
-      $("#" + $(this).attr("data-section")).show();
+      $("." + $(this).attr("data-section")).show();
+
+      console.log(this);
     });
   
   });

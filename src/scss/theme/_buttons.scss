@@ -8,11 +8,6 @@
   width: auto;
 }
 
-.btn:not([class*="btn-outline"]) {
-  border-color: transparent !important;
-}
-
-
 // Sizing
 
 .btn-xs {
@@ -41,7 +36,7 @@
 .btn-features {
   background-color: #0A2841;
   color: $white;
-  border-color: $white !important;
+  border: 1px solid #fff !important; 
   border-radius: $border-radius-pill;
 
   &:hover, &:focus {
@@ -49,7 +44,7 @@
     color: #0A2841;
   }
 
-  &.active {
+  &:target {
     background-color: $white;
     color: #0A2841;
   }
