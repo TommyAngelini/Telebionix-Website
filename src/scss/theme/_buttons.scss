@@ -38,35 +38,20 @@
   }
 }
 
-.btn-switch-on {
-  background-color: white;
-  color: #0A2841;
-
-  &:hover, &:focus {
-    background-color: darken($white, 5%);
-    color: darken(#0A2841, 5%);
-  }
-
-  &.active {
-    background-color: darken($white, 10%);
-    color: darken(#0A2841, 5%);
-  }
-}
-
-.btn-switch-off {
-  border-color: $white;
+.btn-features {
+  background-color: #0A2841;
   color: $white;
+  border-color: $white !important;
+  border-radius: $border-radius-pill;
 
   &:hover, &:focus {
-    background-color: darken($blue, 30%);
-    border-color: $white;
-    color: $white;
+    background-color: $white;
+    color: #0A2841;
   }
 
   &.active {
-    background-color: #0A2841;
-    border-color: $white !important;
-    color: $white;
+    background-color: $white;
+    color: #0A2841;
   }
 }
 

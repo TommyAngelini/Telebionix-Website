@@ -318,6 +318,28 @@
       </div>
     </section>
 
+    <!-- ANIMATION TEST -->
+    <section class="py-8 py-md-8" style="background: #0A2841">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center my-auto">
+
+            <img src="assets/img/tbx/ecosystem/circle.svg" alt="" class="img-fluid img-responsive text-center">
+
+            <!-- ICON TO ANIMATE -->
+            <img src="/assets/img/icons/tbx/heart.svg" alt="" class="circle-element" style="animation-delay: 0s;">
+            <img src="/assets/img/icons/tbx/heart.svg" alt="" class="circle-element" style="animation-delay: 2s;">
+            <img src="/assets/img/icons/tbx/heart.svg" alt="" class="circle-element" style="animation-delay: 4s;">
+            <img src="/assets/img/icons/tbx/heart.svg" alt="" class="circle-element" style="animation-delay: 6s;">
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- REMOSENSE BANNER -->
     <section class="overlay overlay-dark overlay-20" data-jarallax data-speed=".8" style="background-image: url(assets/img/tbx/remosense-banner-3.png)">
       <div class="container d-flex flex-column">
@@ -425,20 +447,19 @@
            
             <div class="col-12 text-center">
              
-              <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-pill btn-switch-on active" id="option1" aria-pressed="true" data-toggle="button" checked>
-                  For patients
-                </label>
-                <label class="btn btn-pill btn-switch-off active" id="option2">
+              <div class="btn-group">
+                <button type="button" class="btn btn-features segmentedButton" data-section="section1" id="option1"> For patients</button>
+      
+                <button type="button" class="btn btn-features segmentedButton" data-section="section2" id="option2">
                   For clinicians
-                </label>
+                </button>
              
               </div>
             </div>
           </div>
           
-          <!-- TEXT ROW -->
-          <div class="row align-items-center pb-4">
+          <!-- TEXT FOR PATIENTS -->
+          <div class="row align-items-center pb-4 content-section" id="section1">
             <div class="col-12">
             
               <!-- Text -->
@@ -449,8 +470,262 @@
           </div>
                   
 
-           <!-- FEATURES + SCREENSHOTS ROW -->
-           <div class="row align-items-center pb-4">
+           <!-- FEATURES + SCREENSHOTS ROW FOR PATIENTS -->
+           <div class="row align-items-center pb-4 content-section" id="section3">
+            
+            <!-- LIST OF ITEMS -->
+            <div class="col-6">
+
+              <!-- ACCORDION -->
+              <div class="accordion accordion-flush"  id="accordionFlushExample" style="border-bottom-color: #0A2841; background-color: #0A2841;"> 
+                
+                <!-- HEART RATE ACCORDON ITEM -->
+                <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                      
+                      <div class="col-2 text-center">
+                        <!-- Icon -->
+                      <div class="icon text-primary mb-3">
+                        <img class="img-fluid" src="assets/img/tbx/heart_rate.svg" alt="...">
+                      </div>
+                      </div>
+                      
+                      <div class="col-10">
+                        <h2 class="text-white btn-block"> Heart Rate </h2>
+                      </div>
+
+                      
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                  </div>
+                </div>
+               <!-- / ACCORDON ITEM -->
+
+                <!-- HRV ACCORDON ITEM -->
+                <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                      <div class="col-2 text-center">
+                        <!-- Icon -->
+                      <div class="icon text-primary mb-3">
+                        <img class="img-fluid" src="assets/img/tbx/hrv.svg" alt="...">
+                      </div>
+                      </div>
+                      
+                      <div class="col-10">
+                        <h2 class="text-white btn-block"> Heart Rate Variability </h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                  </div>
+                </div>
+               <!-- / ACCORDON ITEM -->
+                
+                <!-- BLOOD PRESSURE ACCORDON ITEM -->
+                <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                      <div class="col-2 text-center">
+                        <!-- Icon -->
+                      <div class="icon text-primary mb-3">
+                        <img class="img-fluid" src="assets/img/tbx/bp.svg" alt="...">
+                      </div>
+                      </div>
+                      
+                      <div class="col-10">
+                        <h2 class="text-white btn-block"> Blood Pressure </h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                  </div>
+                </div>
+               <!-- / ACCORDON ITEM -->
+
+               <!-- BLOOD OXYGENTATION ACCORDON ITEM -->
+               <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                    <div class="col-2 text-center">
+                      <!-- Icon -->
+                    <div class="icon text-primary mb-3">
+                      <img class="img-fluid" src="assets/img/tbx/bo.svg" alt="...">
+                    </div>
+                    </div>
+                    
+                    <div class="col-10">
+                      <h2 class="text-white btn-block"> Blood Oxygenation </h2>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                </div>
+              </div>
+             <!-- / ACCORDON ITEM -->
+
+              <!-- BODY TEMPERATURE ACCORDON ITEM -->
+              <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                    <div class="col-2 text-center">
+                      <!-- Icon -->
+                    <div class="icon text-primary mb-3">
+                      <img class="img-fluid" src="assets/img/tbx/bt.svg" alt="...">
+                    </div>
+                    </div>
+                    
+                    <div class="col-10">
+                      <h2 class="text-white btn-block"> Body Temperature </h2>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                </div>
+              </div>
+             <!-- / ACCORDON ITEM -->
+
+             <!-- ECG ACCORDON ITEM -->
+             <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                  <div class="col-2 text-center">
+                    <!-- Icon -->
+                  <div class="icon text-primary mb-3">
+                    <img class="img-fluid" src="assets/img/tbx/ecg.svg" alt="...">
+                  </div>
+                  </div>
+                  
+                  <div class="col-10">
+                    <h2 class="text-white btn-block"> ECG </h2>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+              </div>
+            </div>
+           <!-- / ACCORDON ITEM -->
+
+           <!-- ACCORDON ITEM -->
+           <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+            <h2 class="accordion-header" id="flush-headingSeven" style="border-bottom-color:#0A2841">
+              <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841; border-bottom-color:#0A2841">
+
+                <div class="col-2 text-center">
+                  <!-- Icon -->
+                <div class="icon text-primary mb-3">
+                  <img class="img-fluid" src="assets/img/tbx/ds.svg" alt="...">
+                </div>
+                </div>
+                
+                <div class="col-10">
+                  <h2 class="text-white btn-block"> Digial Stethoscope </h2>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+            </div>
+           </div>
+           <!-- / ACCORDON ITEM -->
+           
+          </div>
+            </div>  
+
+            <!-- SCREENSHOT CAROUSEL -->
+            <div class="col-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <!-- iphone dashboard -->
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/ecg.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                      
+                    </div>
+                    <div class="carousel-item">
+                      <!-- iphone dashboard -->
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/oxi.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <!-- iphone dashboard -->
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/bp.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/oxi.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/temp.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/ecg.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/steth.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                                
+              </div>
+              
+            </div> 
+          
+
+           </div>
+
+           <!-- TEXT FOR CLINICIANS -->
+          <div class="row align-items-center pb-4 content-section" id="section2">
+            <div class="col-12">
+            
+              <!-- Text -->
+              <p class="fs-lg text-center text-muted mb-4 pr-md-4 pl-md-4 pt-md-4">
+                Remosense measures 7 different vital signs with high accuracy, all in one compact, reliable, and clinical-grade device. All data is transmitted via a secure app and stored in our HIPAA, GDPR, ISO compliant cloud.
+              </p>
+            </div>
+          </div>
+                  
+
+           <!-- FEATURES + SCREENSHOTS ROW FOR CLINICIANS -->
+           <div class="row align-items-center pb-4 content-section" id="section4">
             
             <!-- LIST OF ITEMS -->
             <div class="col-6">
