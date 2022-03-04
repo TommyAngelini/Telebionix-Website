@@ -442,6 +442,35 @@
       }
 }
 
+// END ECOSYSTEM ORBITS
+
+// REMOSENSE CAPSULE 
+
+// background
+@media (min-width: 768px) {
+    .capsule-background {
+        background: transparent url('/assets/img/tbx/remosense_egg/circle_background.svg') no-repeat center center;
+    }
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .capsule-background {
+        background: white;
+    }
+}
+
+// capsule top and bottom
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .capsule {
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 
 
 
