@@ -453,8 +453,32 @@
            <!-- FEATURES + SCREENSHOTS ROW FOR PATIENTS -->
            <div class="row align-items-center pb-4 content-section open-section section1">
             
+            <!-- MOBILE DROPDOWN -->
+            <!--
+            <div class="col-12 d-block d-sm-none">
+              <div class="dropdown text-center">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Select Measurement
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Heart Rate</a></li>
+                  <li><a class="dropdown-item" href="#">Heart Rate Variability</a></li>
+                  <li><a class="dropdown-item" href="#">Blood Pressure</a></li>
+                  <li><a class="dropdown-item" href="#">Blood Oxygenation</a></li>
+                  <li><a class="dropdown-item" href="#">Body Temperature</a></li>
+                  <li><a class="dropdown-item" href="#">ECG</a></li>
+                  <li><a class="dropdown-item" href="#">Digital Stethoscope</a></li>
+
+                </ul>
+              </div>
+            </div>
+            -->
+            
+
+            
+
             <!-- LIST OF ITEMS PATIENTS -->
-            <div class="col-6">
+            <div class="col-6 d-none d-lg-block">
 
               <!-- ACCORDION -->
               <div class="accordion accordion-flush"  id="accordionFlushExample" style="border-bottom-color: #0A2841; background-color: #0A2841;"> 
@@ -633,13 +657,22 @@
             </div>  
 
             <!-- SCREENSHOT CAROUSEL PATIENTS -->
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                 
                   <div class="carousel-inner">
                     <div class="carousel-item active">
+                      
+                      <!-- MOBILE TEXT -->
+                      <div class="col-12 text-center">  
+                          <div class="icon text-primary mb-3 mb-md-0">
+                            <img class="img-fluid" src="assets/img/tbx/features/steth_mobile.png" alt="...">
+                          </div>
+                      </div>
+                      
                       <!-- iphone dashboard -->
                       <div class="device device-iphonex">
+
                         <img src="assets/img/tbx/features/ecg.png" class="device-screen" alt="...">
                         <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
                       </div>
