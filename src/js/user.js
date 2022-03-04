@@ -20,6 +20,6 @@ $(function() {
 
 window.onload=function(){
     document.getElementById("linkid").click();
-    $(".section2").fadeOut();
+    $(".section2").hide();
     
   };
