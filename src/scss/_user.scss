@@ -480,7 +480,28 @@
     }
 }
 
+// PULSATING ICONS 
 
+.circle {
+    border-radius: 50%;
+    background-color: deepskyblue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+  }
+
+  @keyframes scaleIn {
+    from {
+      transform: scale(.5, .5);
+      opacity: .25;
+    }
+    to {
+      transform: scale(2.5, 2.5);
+      opacity: 0;
+    }
+  }
 
 
 
