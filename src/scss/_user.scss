@@ -503,15 +503,93 @@
     }
   }
 
+// SCREENSHOT CAROUSEL FOR DESKTOP VS. MOBILE 
+
+// FOR PATIENTS SECTION
+
+// hr desktop
+@media (min-width: 768px) {
+    .hr-p-m {
+        content: url('/assets/img/tbx/features/ecg-t.png')
+    }
+}
+
+// hr mobile
+@media (min-width: 340px) and (max-width: 767px) {
+    .hr-p-m {
+        content: url('/assets/img/tbx/features/ecg-p-m.png')
+    }
+}
+
+// hrv desktop
+@media (min-width: 768px) {
+    
+}
+
+// hrv mobile
+@media (min-width: 340px) and (max-width: 767px) {
+    
+}
+
+// bp desktop
+@media (min-width: 768px) {
+
+}
+
+// bp mobile
+@media (min-width: 340px) and (max-width: 767px) {
+    
+}
+
+// oxygenation desktop
+@media (min-width: 768px) {
+
+}
+
+// oxygenation mobile
+@media (min-width: 340px) and (max-width: 767px) {
+    
+}
 
 
+// temperature desktop
+@media (min-width: 768px) {
+
+}
+
+// temperature mobile
+@media (min-width: 340px) and (max-width: 767px) {
+    
+}
+
+// ecg desktop
+@media (min-width: 768px) {
+
+}
+
+// ecg mobile
+@media (min-width: 340px) and (max-width: 767px) {
+    
+}
+
+// digital stethoscope desktop
+@media (min-width: 768px) {
+
+}
+
+// digital stethoscope mobile
+@media (min-width: 340px) and (max-width: 767px) {
+    
+}
 
 
+// END FOR PATIENTS SECTION
 
-
-
-
-
+.nopadding {
+    padding-right: 4px !important;
+    padding-left: 4px !important;
+    margin: 0 !important;
+ }
 
 .open-section {
   display: true;
