@@ -33,6 +33,22 @@
   }
 }
 
+.btn-transparent {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+
+  &:hover, &:focus {
+    background-color: $white;
+    color: darken($primary, 5%);
+  }
+
+  &.active {
+    background-color: darken($white, 5%);
+    color: darken($primary, 5%);
+  }
+}
+
 .btn-features {
   background-color: #0A2841;
   color: $white;
