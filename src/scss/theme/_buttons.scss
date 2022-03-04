@@ -40,12 +40,12 @@
 
   &:hover, &:focus {
     background-color: $white;
-    color: darken($primary, 5%);
+    color: #0A2841;
   }
 
   &.active {
     background-color: darken($white, 5%);
-    color: darken($primary, 5%);
+    color: #0A2841;
   }
 }
 
@@ -54,10 +54,12 @@
   color: $white;
   border: 1px solid #fff !important; 
   border-radius: $border-radius-pill;
+  font-weight: 400 !important;
 
   &:hover, &:focus {
     background-color: $white;
     color: #0A2841;
+    font-weight: 600 !important;
   }
 
   &:target {
