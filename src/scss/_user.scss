@@ -2,3 +2,10 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+:root {
+    --bs-body-font-family: 'Assistant', sans-serif;
+    
+}
