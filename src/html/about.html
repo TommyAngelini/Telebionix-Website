@@ -5,6 +5,11 @@
   </head>
   <body>
 
+    <!-- BUTTON TO SCROLL TO TOP -->
+    <a id="btnScrollToTop" class="btn btn-transparent btn-rounded-circle shadow d-flex justify-content-center align-items-center" data-scroll='{"offset": 0}' href="#about">
+      <i class="fe fe-arrow-up"></i>        
+  </a>
+
     <!-- MODALS -->
     {{> partials/modals}}
 
@@ -12,7 +17,7 @@
     {{> partials/navbar classList="navbar-light bg-white border-bottom" container="container-fluid" button="primary"}}
 
     <!-- ABOUT US -->
-    <section class="py8 py-md-11 border-bottom" style="background:#E4F7FF !important;">
+    <section class="py8 py-md-11 border-bottom" id="about" style="background:#E4F7FF !important;">
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-12 col-md-12 col-lg-8 text-start">
@@ -101,7 +106,7 @@
 
             <!-- Button -->
             <div class="text-center text-md-start p-5 p-md-0">
-              <a href="#team" class="btn btn-remosense rounded-pill text-md-center shadow lift me-1">
+              <a href="#team" class="btn btn-remosense rounded-pill text-md-center shadow lift me-1 " data-scroll='{"offset": 0}'>
                 <div class="col">
                   Learn More
                 </div>
@@ -302,7 +307,7 @@
     </section>
 
     <!-- OUR VALUES -->
-    <section class="py-8 py-md-11">
+    <section class="py-8 py-md-11" id="values">
       <div class="container">
         <div class="row justify-content-start">
           <div class="col-xs-12 col-sm-6 col-md-8 text-center text-lg-start">
@@ -315,14 +320,14 @@
         </div>
         
         
-        <div class="row justify-content-start text-center text-lg-start">
+        <div class="row d-flex align-items-center text-center text-lg-start">
           <div class="col-12 col-sm-6 col-md-6 d-none d-sm-block">
 
             <img class="img-fluid rounded shadow-lg" src="assets/img/tbx/values/girl.png" alt="..." data-aos="fade-right"> 
 
             
           </div>
-          <div class="col-6 col-md-6 align-items-center">
+          <div class="col-12 col-md-6">
             
             <h1 class="display-5 text-dark" data-aos="fade-left">
               Human-Centered
@@ -371,7 +376,7 @@
           <div class="col-12 col-md-auto"  data-aos="fade-up">
 
             <!-- Button -->
-            <a href="#!" class="btn btn-primary lift" >
+            <a href="contact.html" class="btn btn-remosense rounded-pill shadow lift me-1" >
               Contact Us
             </a>
 

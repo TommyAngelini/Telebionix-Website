@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg {{classList}}">
+<nav class="navbar navbar-expand-lg  {{classList}}" id="navb">
   <div class="{{container}}">
 
     <!-- Brand -->
@@ -7,8 +7,8 @@
     </a>
 
     <!-- Toggler -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler " id="hamburgericon"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
     </button>
 
     <!-- Collapse -->
@@ -22,29 +22,41 @@
       <!-- Navigation -->
       <ul class="navbar-nav ms-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarPages" href="{{webRoot}}/index.html#remosense-banner" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" id="navbarPages" href="{{webRoot}}/index.html#remosense-banner" data-scroll='{"offset": 0}' aria-haspopup="true" aria-expanded="false">
             Product
+            <a class="dropdown-item d-block d-sm-none" href="{{webRoot}}/index.html#remosense-banner">
+              Introduction to Remosense
+            </a>
           </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarLandings" href="{{webRoot}}/about.html" aria-haspopup="true" aria-expanded="false">
             About Us
+            <a class="dropdown-item d-block d-sm-none" href="{{webRoot}}/about.html">
+              Get to know the team
+            </a>
           </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarAccount" href="{{webRoot}}/investors.html" aria-haspopup="true" aria-expanded="false">
             Investors
+            <a class="dropdown-item d-block d-sm-none" href="{{webRoot}}/investors.html">
+              Why Invest in Telebionix?
+            </a>
           </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDocumentation" href="{{webRoot}}/blog.html" aria-haspopup="true" aria-expanded="false">
             News
+            <a class="dropdown-item d-block d-sm-none" href="{{webRoot}}/blog.html">
+              Latest News
+            </a>
           </a>
         </li>
       </ul>
 
       <!-- Button -->
-      <a class="navbar-btn btn rounded-pill btn-sm btn-{{button}} lift ms-auto" href="{{webRoot}}/contact.html" style="background-color:#0A2841">
+      <a class="navbar-btn btn rounded-pill btn-sm btn-{{button}} lift ms-auto" href="{{webRoot}}/contact.html" style="background-color:#0A2841; border: none;">
         Contact Us
       </a>
 

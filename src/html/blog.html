@@ -5,6 +5,11 @@
   </head>
   <body class="bg-light">
 
+    <!-- BUTTON TO SCROLL TO TOP -->
+    <a id="btnScrollToTop" class="btn btn-transparent btn-rounded-circle shadow d-flex justify-content-center align-items-center" data-scroll='{"offset": 0}' href="#hero">
+      <i class="fe fe-arrow-up"></i>        
+  </a>
+
     <!-- MODALS -->
     {{> partials/modals}}
 
@@ -12,7 +17,7 @@
     {{> partials/navbar classList="navbar-light bg-white" container="container" button="primary"}}
 
     <!-- WELCOME -->
-    <section data-jarallax data-speed=".8" class="py-10 py-md-14 bg-cover jarallax" style="background-image: url(assets/img/tbx/news_banner.png);">
+    <section data-jarallax data-speed=".8"  id="hero" class="py-10 py-md-14 bg-cover jarallax" style="background-image: url(assets/img/tbx/news_banner.png);">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-7 text-center">
@@ -54,7 +59,7 @@
 
                 <!-- Text -->
                 <span class="input-group-text border-0 py-0 ps-1 pe-3">
-                  <a class="btn btn-sm btn-primary" href="blog-search.html">
+                  <a class="btn btn-sm btn-remosense" href="blog-search.html">
                     Search
                   </a>
                 </span>

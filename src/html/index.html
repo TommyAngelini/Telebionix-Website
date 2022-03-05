@@ -5,6 +5,11 @@
   </head>
   <body>
 
+    <!-- BUTTON TO SCROLL TO TOP -->
+    <a id="btnScrollToTop" class="btn btn-transparent btn-rounded-circle shadow d-flex justify-content-center align-items-center" data-scroll='{"offset": 0}' href="#hero">
+        <i class="fe fe-arrow-up"></i>        
+    </a>
+
     <!-- MODALS -->
     {{> partials/modals}}
 
@@ -12,7 +17,7 @@
     {{> partials/navbar classList="navbar-light bg-white" container="container" button="primary"}}
 
     <!-- WELCOME -->
-    <section class="pb-8 pb-md-0 pt-2 pt-md-2 p-lg-12" style="background: linear-gradient(to bottom, #015193, #4B86A8);">
+    <section class="pb-8 pb-md-0 pt-2 pt-md-2 p-lg-12" id="hero" style="background: linear-gradient(to bottom, #015193, #4B86A8);">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
@@ -36,7 +41,7 @@
 
             <!-- Button -->
             <div class="text-center text-md-start">
-              <a href="overview.html" class="btn text-white rounded-pill btn-outline-white shadow lift me-1">
+              <a href="about.html" class="btn text-white rounded-pill btn-outline-white shadow lift me-1">
                 About Us 
               </a>
             </div>
@@ -216,7 +221,7 @@
 
             <!-- Button -->
             <div class="text-center text-md-start p-5 p-md-0">
-              <a href="overview.html" class="btn btn-remosense rounded-pill text-md-center shadow lift me-1">
+              <a href="contact.html" class="btn btn-remosense rounded-pill text-md-center shadow lift me-1">
                 <div class="col">
                   Get in touch 
                 </div>
@@ -409,7 +414,7 @@
 
     <!-- FEATURES SECTION -->
     <section class="pt-8 pt-md-8 bg-gradient-light-white" style="background: #0A2841" id = "features">
-      <div class="container">
+      <div class="container" style="background: #0A2841">
         
         <!-- HEADING ROW -->
         <div class="row align-items-center pb-lg-4">
@@ -438,6 +443,14 @@
               </div>
             </div>
           </div>
+
+          <!-- ANIMATE SCROLL ROW -->
+          <div class="row align-items-center pb-2">
+            <div class="col-12 d-block d-sm-none">
+              <div class="scroll-down"></div>
+            </div>
+            
+          </div>
           
           <!-- TEXT FOR PATIENTS -->
           <div class="row align-items-center pb-4 content-section open-section section1 ">
@@ -464,12 +477,12 @@
                 <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                   <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                    <button class="accordion-button collapsed btn-block hover-color" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
                       
                       <div class="col-2 text-center">
                         <!-- Icon -->
                       <div class="icon text-primary mb-3">
-                        <img class="img-fluid" src="assets/img/tbx/features_icons/heart_rate.svg" alt="...">
+                        <img class="img-fluid" src="assets/img/tbx/features_icons/hr.svg" alt="...">
                       </div>
                       </div>
                       
@@ -490,7 +503,7 @@
                 <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                   <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                    <button class="accordion-button collapsed btn-block hover-color" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                       <div class="col-2 text-center">
                         <!-- Icon -->
@@ -514,7 +527,7 @@
                 <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                   <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                    <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                       <div class="col-2 text-center">
                         <!-- Icon -->
@@ -538,7 +551,7 @@
                <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                 <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                  <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                     <div class="col-2 text-center">
                       <!-- Icon -->
@@ -562,7 +575,7 @@
               <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                 <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                  <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                     <div class="col-2 text-center">
                       <!-- Icon -->
@@ -586,7 +599,7 @@
              <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
               <h2 class="accordion-header" id="flush-headingSix">
-                <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                   <div class="col-2 text-center">
                     <!-- Icon -->
@@ -610,7 +623,7 @@
            <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
             <h2 class="accordion-header" id="flush-headingSeven" style="border-bottom-color:#0A2841">
-              <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841; border-bottom-color:#0A2841">
+              <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841; border-bottom-color:#0A2841">
 
                 <div class="col-2 text-center">
                   <!-- Icon -->
@@ -647,7 +660,7 @@
                       <div class="row d-flex d-block d-sm-none">
                         
                         <!-- ICON + TEXT -->
-                        <div class="col-12 text-center">   
+                        <div class="col-12 text-center ">   
                           <span>
                             
                             <span class="d-inline-block btn float-right icon-feature icon-hr"> 
@@ -884,12 +897,12 @@
                 <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                   <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                    <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
                       
                       <div class="col-2 text-center">
                         <!-- Icon -->
                       <div class="icon text-primary mb-3">
-                        <img class="img-fluid" src="assets/img/tbx/features_icons/heart_rate.svg" alt="...">
+                        <img class="img-fluid" src="assets/img/tbx/features_icons/hr.svg" alt="...">
                       </div>
                       </div>
                       
@@ -910,7 +923,7 @@
                 <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                   <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                    <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                       <div class="col-2 text-center">
                         <!-- Icon -->
@@ -934,7 +947,7 @@
                 <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                   <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                    <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                       <div class="col-2 text-center">
                         <!-- Icon -->
@@ -958,7 +971,7 @@
                <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                 <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                  <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                     <div class="col-2 text-center">
                       <!-- Icon -->
@@ -982,7 +995,7 @@
               <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
                 <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                  <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                     <div class="col-2 text-center">
                       <!-- Icon -->
@@ -1006,7 +1019,7 @@
              <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
               <h2 class="accordion-header" id="flush-headingSix">
-                <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
 
                   <div class="col-2 text-center">
                     <!-- Icon -->
@@ -1030,7 +1043,7 @@
            <div class="accordion-item"  style="border-bottom-color:#0A2841">
                   
             <h2 class="accordion-header" id="flush-headingSeven" style="border-bottom-color:#0A2841">
-              <button class="accordion-button collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841; border-bottom-color:#0A2841">
+              <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841; border-bottom-color:#0A2841">
 
                 <div class="col-2 text-center">
                   <!-- Icon -->
@@ -1260,7 +1273,7 @@
            <!-- CTA -->
            <div class="row align-items-center pb-10">
             <div class="text-center">
-              <a href="overview.html" class="btn text-white rounded-pill btn-outline-white shadow lift me-1">
+              <a href="contact.html" class="btn text-white rounded-pill btn-outline-white shadow lift me-1">
                 Request a demo
               </a>
             </div>
@@ -1271,7 +1284,7 @@
 
 
     <!-- SOLUTIONS SECTION -->
-    <section class="pt-8 pt-md-11 bg-gradient-light-white">
+    <section class="pt-8 pt-md-11 bg-gradient-light-white" id="solutions">
       <div class="container">
 
         <!-- HEADER -->
@@ -1566,7 +1579,7 @@
 
         <!-- CTA -->
         <div class="text-center p-5 p-md-2">
-          <a href="overview.html" class="btn btn-remosense rounded-pill text-md-center shadow lift me-1">
+          <a href="contact.html" class="btn btn-remosense rounded-pill text-md-center shadow lift me-1">
             <div class="col">
               Get in touch 
             </div>
@@ -1670,7 +1683,7 @@
           <div class="col-12 col-md-auto">
 
             <!-- Button -->
-            <a href="#!" class="btn rounded-pill btn-outline-dark shadow lift me-1 d-none d-lg-block">
+            <a href="blog.html" class="btn rounded-pill btn-outline-dark shadow lift me-1 d-none d-lg-block">
              Read More
             </a>
 
@@ -1883,7 +1896,7 @@
 
             <!-- Button -->
             <div class="text-center text-md-center pb-10">
-              <a href="overview.html" class="btn btn-remosense rounded-pill shadow lift me-1">
+              <a href="contact.html" class="btn btn-remosense rounded-pill shadow lift me-1">
                 Get in touch <i class="fe d-none d-md-center ms-3"></i>
               </a>
             </div>
