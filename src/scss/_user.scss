@@ -633,6 +633,30 @@
 }
 
 
+// ABOUT US CIRCLE WAVE
+.circle-wave {
+    width: 400px; 
+    top:37%;
+}
+
+// FOUNDING MEMBERS PHOTO
+@media (min-width: 768px) {
+    .founder {
+        height: 220px; 
+        width: 220px; 
+        border-radius: 10px;
+     }
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
+    .founder {
+        height: auto; 
+        width: 200px; 
+        padding-bottom: 5px;
+     }
+}
+
+
 .open-section {
   display: true;
 }
