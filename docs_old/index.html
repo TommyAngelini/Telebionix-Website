@@ -1,0 +1,2700 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    
+    <!-- Title -->
+    <title>Telebionix</title>
+  </head>
+  <body>
+
+    <!-- BUTTON TO SCROLL TO TOP -->
+    <a id="btnScrollToTop" class="btn btn-transparent btn-rounded-circle shadow d-flex justify-content-center align-items-center" data-scroll='{"offset": 0}' href="#hero">
+        <i class="fe fe-arrow-up"></i>        
+    </a>
+
+    <!-- MODALS -->
+    <!-- Example -->
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+    
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- First name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">First name</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Last name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- Email -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Password -->
+                  <div class="form-floating">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-primary mt-3 lift">
+                    Request a demo
+                  </button>
+    
+                </div>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn w-100 btn-primary" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+    
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
+            </div>
+    
+            <!-- Body -->
+            <div class="card-body">
+    
+              <!-- Heading -->
+              <h2 class="mb-0 fw-bold text-center" id="modalSignupVerticalTitle">
+                Sign Up
+              </h2>
+    
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+    
+              <!-- Form -->
+              <form class="mb-6">
+    
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="modalSignupVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="visually-hidden" for="modalSignupVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
+                </div>
+    
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary" type="submit">
+                  Sign up
+                </button>
+    
+              </form>
+    
+              <!-- Text -->
+              <p class="mb-0 fs-sm text-center text-muted">
+                Already have an account? <a href="./signin-illustration.html">Log in</a>.
+              </p>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSigninHorizontalPassword">
+                        Enter your password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn w-100 btn-primary" type="submit">
+                      Sign in
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Vertical  -->
+    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
+    
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
+            </div>
+    
+            <!-- Body -->
+            <div class="card-body">
+    
+              <!-- Heading -->
+              <h2 class="mb-0 fw-bold text-center" id="modalSigninVerticalTitle">
+                Sign In
+              </h2>
+    
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+    
+              <!-- Form -->
+              <form class="mb-6">
+    
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="modalSigninVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="visually-hidden" for="modalSigninVerticalPassword">
+                    Enter your password
+                  </label>
+                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Enter your password">
+                </div>
+    
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary" type="submit">
+                  Sign in
+                </button>
+    
+              </form>
+    
+              <!-- Text -->
+              <p class="mb-0 fs-sm text-center text-muted">
+                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+              </p>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Payment -->
+    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
+              Add Payment
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              Simplify your workflow in minutes.
+            </p>
+    
+            <!-- Form -->
+            <form>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentName">Name on card</label>
+                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentNumbber">Card number</label>
+                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
+                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
+              </div>
+    
+              <!-- Submit -->
+              <button class="btn w-100 btn-primary mt-3 lift">
+                Add Payment Method
+              </button>
+    
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg  navbar-light bg-white" id="navb">
+      <div class="container">
+    
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/brand.svg" class="navbar-brand-img" alt="...">
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler " id="hamburgericon"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" href="./index.html#remosense-banner" data-scroll='{"offset": 0}' aria-haspopup="true" aria-expanded="false">
+                Product
+                <a class="dropdown-item d-block d-sm-block d-md-block d-lg-none " href="./index.html#remosense-banner">
+                  Introduction to Remosense
+                </a>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLandings" href="./about.html" aria-haspopup="true" aria-expanded="false">
+                About Us
+                <a class="dropdown-item d-block d-sm-block d-md-block d-lg-none " href="./about.html">
+                  Get to know the team
+                </a>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" href="./investors.html" aria-haspopup="true" aria-expanded="false">
+                Investors
+                <a class="dropdown-item d-block d-sm-block d-md-block d-lg-none " href="./investors.html">
+                  Why Invest in Telebionix?
+                </a>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" href="./blog.html" aria-haspopup="true" aria-expanded="false">
+                News
+                <a class="dropdown-item d-block d-sm-block d-md-block d-lg-none " href="./blog.html">
+                  Latest News
+                </a>
+              </a>
+            </li>
+          </ul>
+    
+          <!-- Button -->
+          <a class="navbar-btn btn rounded-pill btn-sm btn-primary lift ms-auto" href="./contact.html" style="background-color:#0A2841; border: none;">
+            Contact Us
+          </a>
+    
+        </div>
+    
+      </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <section class="pb-8 pb-md-0 pt-2 pt-md-2 p-lg-12" id="hero" style="background: linear-gradient(to bottom, #015193, #4B86A8);">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+            <!-- Image -->
+            <img src="assets/img/tbx/remosense-top.png" class="img-fluid mw-md-150 mw-lg-130 mb-2 mb-md-0" alt="..." data-aos="fade-up" data-aos-delay="100" style="-webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);">
+
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+
+            <!-- Heading --> 
+            <h1 class="display-3 text-center text-md-start text-white" style="text-shadow: 1px 2px 8px #000000">
+              Bringing healthcare <br>
+              to your home.
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-center text-white text-md-start text-white mb-6 mb-lg-8">
+              Telebionix is reimagining the future of healthcare by measuring your daily health, providing AI-driven insights, and keeping you connected to your caregivers - all from the comfort of your own home.
+            </p>
+
+            <!-- Button -->
+            <div class="text-center text-md-start">
+              <a href="about.html" class="btn text-white rounded-pill btn-outline-white shadow lift me-1">
+                About Us 
+              </a>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- WAVE + IMAGES -->
+    <section class="d-none d-xl-block" >
+      <div class="row align-items-center" style="height:200px">
+        <!-- SHAPE -->
+        <div class="position-relative d-none d-xl-block">
+          <div class="shape shape-bottom shape-fluid-x text-white">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg
+               viewBox="0 0 2880 200"
+               fill="none"
+               version="1.1"
+               id="svg4"
+               sodipodi:docname="curve-2.svg"
+               width="2880"
+               height="200"
+               inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+               xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+               xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:svg="http://www.w3.org/2000/svg">
+              <defs
+                 id="defs8" />
+              <sodipodi:namedview
+                 id="namedview6"
+                 pagecolor="#ffffff"
+                 bordercolor="#666666"
+                 borderopacity="1.0"
+                 inkscape:pageshadow="2"
+                 inkscape:pageopacity="0.0"
+                 inkscape:pagecheckerboard="0"
+                 showgrid="false"
+                 inkscape:zoom="0.55981979"
+                 inkscape:cx="1410.2752"
+                 inkscape:cy="85.741877"
+                 inkscape:window-width="2560"
+                 inkscape:window-height="1377"
+                 inkscape:window-x="-8"
+                 inkscape:window-y="-8"
+                 inkscape:window-maximized="1"
+                 inkscape:current-layer="svg4"
+                 height="57px" />
+              <path
+                 d="M 626,166 1.7862891,162.45961 v 43.58867 L 2885.3589,207.83457 2880,168 C 2641.0908,176.62348 2452.1678,11.027642 2213.319,0.866914 2108.721,-3.083523 1800.0683,94.290313 1660,94.290313 1417.7088,92.64458 1219.7537,9.2191886 976.0708,7.5887594 767.62866,8.9660258 626,166 626,166 Z"
+                 fill="currentColor"
+                 id="path2"
+                 sodipodi:nodetypes="ccccccccc" />
+            </svg>
+          </div>
+      </div>
+        <div class="col-lg-3">
+          <img src="./assets/img/tbx/hero-1.png" alt="" class="position-relative d-none d-xl-block" style="top:-210px; left: 20%" >
+        </div>
+        <div class="col-lg-2">
+          <img src="./assets/img/tbx/hero-2.png" alt="" class="position-relative d-none d-xl-block" style="top:-200px; left: 10%" >
+        </div>
+        <div class="col-lg-2">
+          <img src="./assets/img/tbx/hero-3.png" alt="" class="position-relative d-none d-xl-block" style="top:-170px; left: 30%">
+        </div>
+        <div class="col-lg-2">
+          <img src="./assets/img/tbx/hero-4.png" alt="" class="position-relative d-none d-xl-block" style="top:-150px; left: 35%" >
+        </div>
+        <div class="col-lg-2">
+          <img src="./assets/img/tbx/hero-5.png" alt="" class="position-relative d-none d-xl-block" style="top:-200px; left: 20%">
+        </div>
+        <div class="col-lg-1">
+          <img src="./assets/img/tbx/hero-6.png" alt="" class="position-relative d-none d-xl-block" style="top:-260px; right: 20%">
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM STATEMENT -->
+    <section class="pt-10 pt-md-4 pb-10"> 
+    <div class="container">
+      <div class="row justify-content-center" >
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+
+          <!-- Heading -->
+          <h2 class="pb-8" data-aos="fade-up" data-aos-delay="200">
+            Expanding healthcare systems beyond capacity
+          </h2>
+
+        </div>
+      </div> <!-- / .row -->
+      
+      <!-- Inlcude five problems here -->
+      <div class="row justify-content-center pb-lg-8">
+        <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="200"> 
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <img class="img-fluid" src="assets/img/icons/tbx/virus.svg" alt="...">
+          </div>
+          
+
+          <!-- Heading -->
+          <h3>
+            COVID Era
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            COVID-19 is driving more people to require home-based care.
+          </p>
+
+        </div>
+
+        <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <img class="img-fluid" src="assets/img/icons/tbx/hospital.svg" alt="...">
+          </div>
+
+          <!-- Heading -->
+          <h3>
+            Capacity Constraints
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            Massive shortages in qualified staff are stretching hospitals and clinics beyond capacity.
+          </p>
+
+        </div>
+        <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <img class="img-fluid" src="assets/img/icons/tbx/heart.svg" alt="...">
+          </div>
+          
+
+          <!-- Heading -->
+          <h3>
+            Chronic Disease
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            About half of all American adults have one or more preventable chronic disease.
+          </p>
+
+        </div>
+      </div>
+      <div class="row justify-content-center pb-lg-10">
+        <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <img class="img-fluid" src="assets/img/icons/tbx/tree.svg" alt="...">
+          </div>
+
+        
+          <!-- Heading -->
+          <h3>
+            Limited Access
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            <b><span data-countup='{"startVal": 0}' data-to="20" data-aos data-aos-id="countup:in" data-aos-delay="1000"></span>%</b> of Americans live in rural areas with no access to healthcare. 
+          </p>
+
+        </div>
+
+        <div class="col-12 col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Icon -->
+          <div class="icon text-primary mb-3">
+            <img class="img-fluid" src="assets/img/icons/tbx/computer.svg" alt="...">
+          </div>
+          
+
+          <!-- Heading -->
+          <h3>
+            Unnecessary Visits
+          </h3>
+
+          <!-- Text -->
+          <p class="text-muted mb-6 mb-md-0">
+            <b><span data-countup='{"startVal": 0}' data-to="75" data-aos data-aos-id="countup:in" data-aos-delay="1000"></span>%</b> of clinician appointments could be done through telehealth.
+          </p>
+
+        </div>
+      </div>
+
+    </div> 
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section class="pt-8 pt-md-4 p-lg-12 bg-gradient-light-white" style="background: #E4F7FF;">
+      <div class="container">
+        <div class="row justify-content-between p-4">
+          <div class="col-12 col-md-7 col-lg-6">
+
+            <!-- Heading -->
+            <h2 class="text-center text-lg-start mb-4">
+              Meet the first all-in-one biometric device
+              <span class=" text-center text-lg-start text-primary">powered by artificial intelligence</span>.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-center text-lg-start fs-lg text-muted mb-4 pb-lg-4">
+              <b>Remosence</b> enables personalized health tracking and telehealth communication, 
+              empowering patients with real-time biomarkers and keeping healthcare professionals 
+              in the loop with their patients' health.
+            </p>
+
+            <!-- Button -->
+            <div class="text-center text-md-start p-5 p-md-0">
+              <a href="contact.html" class="btn btn-remosense rounded-pill text-md-center shadow lift me-1">
+                <div class="col">
+                  Get in touch 
+                </div>
+               
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-5 col-lg-6">
+
+            <div class="w-md-150 w-lg-130 pb-5 pb-md-0 position-relative" data-aos="fade-up" data-aos-delay="100">
+
+              <div>
+                <!-- Youtube video -->
+              <a data-bigpicture='{"ytSrc": "8j62EUZsQLE"}' href="#" class="card lift lift-lg shadow-dark">
+                <img src="assets/img/tbx/video_section/thumb.png" class="img-fluid rounded" alt="...">
+              </a>
+              </div>
+              
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- ECOSYSTEM SECTION -->
+    <section class="py-8 py-md-8" style="background: #0A2841">
+      <div class="container ecosystem-background" data-aos="fade-up">
+        
+        <div class="row justify-content-center d-flex p-5">
+          <div class="col-12 text-center">
+            <!-- HEADER-->
+            <h2 class="text-white">Fully Integrated end-to-end health ecosystem</h2>
+          </div>
+          <div class="col-12 text-center mb-5">
+            <!-- SUBTEXT-->
+            <p class="text-white">Remosense enables the right care at the right time by providing our <br> users with a complete integrated platform. </p>
+          </div>
+          
+
+        </div>
+        
+        
+        
+        <div class="row justify-content-center d-flex flex-wrap align-items-center" >
+          
+
+         <!-- PATIENT CENTRIC CARE -->
+        <div class="col-lg-3 pb-8 pb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="thumbnail lift-slow lift-slow-lg">
+            <div class="picture1">
+              <img src="assets/img/tbx/ecosystem/patient_rect.svg" alt="" class="img-fluid img-responsive">
+            </div>
+            <div class="picture2">
+              <img src="assets/img/tbx/ecosystem/patient_hover.svg" alt="" class="img-fluid img-responsive">
+            </div>
+          </div>
+          
+          
+        </div>
+
+        <!-- SECURE CLOUD PLATFORM -->
+        <div class="col-lg-6 pb-8 pt-8 pt-md-0 pb-md-0 text-center" data-aos="fade-up">
+          
+          <img src="assets/img/tbx/ecosystem/circle_dotted.svg" alt="" class="circle-cloud  text-center">
+            
+            <img src="assets/img/tbx/ecosystem/rpm.svg" alt="" class="circle-element-0">            
+            <img src="assets/img/tbx/ecosystem/research.svg" alt="" class="circle-element-60">
+            <img src="assets/img/tbx/ecosystem/industry.svg" alt="" class="circle-element-120">
+            <img src="assets/img/tbx/ecosystem/analytics.svg" alt="" class="circle-element-180" >
+            <img src="assets/img/tbx/ecosystem/household.svg" alt="" class="circle-element-240">
+            <img src="assets/img/tbx/ecosystem/doctors.svg" alt="" class="circle-element-300">
+            
+            
+
+        </div>
+
+        <!-- HEALTHCARE PROVIDERS -->
+        <div class="col-lg-3 pt-8 pt-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
+          
+          <div class="thumbnail lift-slow lift-slow-lg">
+            <div class="picture1">
+              <img src="assets/img/tbx/ecosystem/health_rect.svg" alt="" class="img-fluid img-responsive">
+            </div>
+            <div class="picture2">
+              <img src="assets/img/tbx/ecosystem/health_hover.svg" alt="" class="img-fluid img-responsive">
+            </div>
+          </div>
+        
+        </div>
+
+
+
+        </div>
+
+        <div class="row p-10 p-md-10"></div>
+      </div>
+    </section>
+
+
+    <!-- REMOSENSE BANNER -->
+    <section class="overlay overlay-dark overlay-20" data-jarallax data-speed=".8" id="remosense-banner" style="background-image: url(assets/img/tbx/remosense-banner-3.png)">
+      <div class="container d-flex flex-column">
+        <div class="row justify-content-start min-vh-100 py-8 py-md-11">
+          <div class="col-12 col-md-8 col-lg-6 mt-auto text-start">
+
+            <!-- Brand -->
+            <div class="img-fluid text-white mb-6">
+              <svg viewBox="0 0 222 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M 50.713 30.926 L 48.269 30.926 L 48.269 8.319 L 50.29 8.319 L 50.572 11.75 L 50.666 11.75 Q 52.17 10.058 54.027 8.907 Q 55.883 7.755 57.81 7.755 Q 59.697 7.755 60.978 8.373 A 4.473 4.473 0 0 1 61.946 9.001 A 6.71 6.71 0 0 1 63.682 11.332 A 8.526 8.526 0 0 1 64.061 12.314 A 23.108 23.108 0 0 1 65.706 10.634 Q 66.627 9.79 67.548 9.159 A 13.754 13.754 0 0 1 67.821 8.977 A 7.867 7.867 0 0 1 69.694 8.07 A 6.423 6.423 0 0 1 71.675 7.755 A 8.635 8.635 0 0 1 73.647 7.966 Q 75.627 8.431 76.775 9.917 Q 77.958 11.451 78.302 14.098 A 18.312 18.312 0 0 1 78.443 16.45 L 78.443 30.926 L 76.046 30.926 L 76.046 16.779 A 16.894 16.894 0 0 0 75.953 14.941 Q 75.716 12.778 74.871 11.562 A 3.79 3.79 0 0 0 72.478 10.004 A 6.119 6.119 0 0 0 71.158 9.87 A 5.11 5.11 0 0 0 69.275 10.244 A 7.182 7.182 0 0 0 68.009 10.904 A 12.341 12.341 0 0 0 66.725 11.87 Q 65.695 12.746 64.578 14.006 L 64.578 30.926 L 62.181 30.926 L 62.181 16.779 Q 62.181 13.56 61.181 11.869 A 4.449 4.449 0 0 0 60.982 11.562 Q 59.784 9.87 57.246 9.87 A 5.124 5.124 0 0 0 55.085 10.393 Q 53.423 11.165 51.567 13.078 A 24.476 24.476 0 0 0 50.713 14.006 L 50.713 30.926 Z M 42.159 20.022 L 25.474 20.022 L 25.474 18.095 L 40.044 18.095 A 15.759 15.759 0 0 0 39.891 15.82 Q 39.528 13.338 38.305 11.868 A 5.681 5.681 0 0 0 34.29 9.809 A 8.013 8.013 0 0 0 33.558 9.776 A 6.566 6.566 0 0 0 30.655 10.468 A 8.165 8.165 0 0 0 29.986 10.834 A 7.085 7.085 0 0 0 28.072 12.569 A 9.716 9.716 0 0 0 27.119 14.077 A 9.251 9.251 0 0 0 26.348 16.218 Q 26.103 17.263 26.026 18.486 A 18.481 18.481 0 0 0 25.991 19.646 A 14.297 14.297 0 0 0 26.179 22.031 Q 26.457 23.669 27.143 24.957 Q 28.294 27.119 30.174 28.294 A 7.784 7.784 0 0 0 34.248 29.468 A 9.306 9.306 0 0 0 34.404 29.469 Q 36.237 29.469 37.694 28.905 Q 39.151 28.341 40.42 27.495 L 41.36 29.234 A 19.832 19.832 0 0 1 39.528 30.237 A 24.252 24.252 0 0 1 38.305 30.785 Q 36.613 31.49 34.169 31.49 Q 31.255 31.49 28.858 30.08 A 9.901 9.901 0 0 1 25.371 26.581 A 12.007 12.007 0 0 1 25.051 26.015 Q 23.646 23.368 23.641 19.671 A 19.613 19.613 0 0 1 23.641 19.646 A 16.014 16.014 0 0 1 23.931 16.526 A 11.828 11.828 0 0 1 25.051 13.301 A 11.552 11.552 0 0 1 26.795 10.806 A 9.668 9.668 0 0 1 28.741 9.189 A 9.183 9.183 0 0 1 31.978 7.899 A 8.684 8.684 0 0 1 33.558 7.755 A 9.977 9.977 0 0 1 35.869 8.011 A 7.642 7.642 0 0 1 38.234 9.001 A 7.773 7.773 0 0 1 40.805 11.737 A 9.786 9.786 0 0 1 41.243 12.596 Q 42.226 14.781 42.295 17.778 A 19.865 19.865 0 0 1 42.3 18.236 A 17.044 17.044 0 0 1 42.289 18.84 A 19.98 19.98 0 0 1 42.276 19.129 A 5.489 5.489 0 0 1 42.197 19.835 A 4.867 4.867 0 0 1 42.159 20.022 Z M 147.627 20.022 L 130.942 20.022 L 130.942 18.095 L 145.512 18.095 A 15.759 15.759 0 0 0 145.359 15.82 Q 144.996 13.338 143.773 11.868 A 5.681 5.681 0 0 0 139.758 9.809 A 8.013 8.013 0 0 0 139.026 9.776 A 6.566 6.566 0 0 0 136.123 10.468 A 8.165 8.165 0 0 0 135.454 10.834 A 7.085 7.085 0 0 0 133.54 12.569 A 9.716 9.716 0 0 0 132.587 14.077 A 9.251 9.251 0 0 0 131.816 16.218 Q 131.571 17.263 131.494 18.486 A 18.481 18.481 0 0 0 131.459 19.646 A 14.297 14.297 0 0 0 131.647 22.031 Q 131.925 23.669 132.611 24.957 Q 133.762 27.119 135.642 28.294 A 7.784 7.784 0 0 0 139.716 29.468 A 9.306 9.306 0 0 0 139.872 29.469 Q 141.705 29.469 143.162 28.905 Q 144.619 28.341 145.888 27.495 L 146.828 29.234 A 19.832 19.832 0 0 1 144.996 30.237 A 24.252 24.252 0 0 1 143.773 30.785 Q 142.081 31.49 139.637 31.49 Q 136.723 31.49 134.326 30.08 A 9.901 9.901 0 0 1 130.839 26.581 A 12.007 12.007 0 0 1 130.519 26.015 Q 129.114 23.368 129.109 19.671 A 19.613 19.613 0 0 1 129.109 19.646 A 16.014 16.014 0 0 1 129.399 16.526 A 11.828 11.828 0 0 1 130.519 13.301 A 11.552 11.552 0 0 1 132.263 10.806 A 9.668 9.668 0 0 1 134.209 9.189 A 9.183 9.183 0 0 1 137.446 7.899 A 8.684 8.684 0 0 1 139.026 7.755 A 9.977 9.977 0 0 1 141.337 8.011 A 7.642 7.642 0 0 1 143.702 9.001 A 7.773 7.773 0 0 1 146.273 11.737 A 9.786 9.786 0 0 1 146.711 12.596 Q 147.694 14.781 147.763 17.778 A 19.865 19.865 0 0 1 147.768 18.236 A 17.044 17.044 0 0 1 147.757 18.84 A 19.98 19.98 0 0 1 147.744 19.129 A 5.489 5.489 0 0 1 147.665 19.835 A 4.867 4.867 0 0 1 147.627 20.022 Z M 214.696 20.022 L 198.011 20.022 L 198.011 18.095 L 212.581 18.095 A 15.759 15.759 0 0 0 212.428 15.82 Q 212.065 13.338 210.842 11.868 A 5.681 5.681 0 0 0 206.827 9.809 A 8.013 8.013 0 0 0 206.095 9.776 A 6.566 6.566 0 0 0 203.192 10.468 A 8.165 8.165 0 0 0 202.523 10.834 A 7.085 7.085 0 0 0 200.609 12.569 A 9.716 9.716 0 0 0 199.656 14.077 A 9.251 9.251 0 0 0 198.885 16.218 Q 198.64 17.263 198.563 18.486 A 18.481 18.481 0 0 0 198.528 19.646 A 14.297 14.297 0 0 0 198.716 22.031 Q 198.994 23.669 199.68 24.957 Q 200.831 27.119 202.711 28.294 A 7.784 7.784 0 0 0 206.785 29.468 A 9.306 9.306 0 0 0 206.941 29.469 Q 208.774 29.469 210.231 28.905 Q 211.688 28.341 212.957 27.495 L 213.897 29.234 A 19.832 19.832 0 0 1 212.065 30.237 A 24.252 24.252 0 0 1 210.842 30.785 Q 209.15 31.49 206.706 31.49 Q 203.792 31.49 201.395 30.08 A 9.901 9.901 0 0 1 197.908 26.581 A 12.007 12.007 0 0 1 197.588 26.015 Q 196.183 23.368 196.178 19.671 A 19.613 19.613 0 0 1 196.178 19.646 A 16.014 16.014 0 0 1 196.468 16.526 A 11.828 11.828 0 0 1 197.588 13.301 A 11.552 11.552 0 0 1 199.332 10.806 A 9.668 9.668 0 0 1 201.278 9.189 A 9.183 9.183 0 0 1 204.515 7.899 A 8.684 8.684 0 0 1 206.095 7.755 A 9.977 9.977 0 0 1 208.406 8.011 A 7.642 7.642 0 0 1 210.771 9.001 A 7.773 7.773 0 0 1 213.342 11.737 A 9.786 9.786 0 0 1 213.78 12.596 Q 214.763 14.781 214.832 17.778 A 19.865 19.865 0 0 1 214.837 18.236 A 17.044 17.044 0 0 1 214.826 18.84 A 19.98 19.98 0 0 1 214.813 19.129 A 5.489 5.489 0 0 1 214.734 19.835 A 4.867 4.867 0 0 1 214.696 20.022 Z M 156.181 30.926 L 153.737 30.926 L 153.737 8.319 L 155.758 8.319 L 156.04 11.75 L 156.134 11.75 A 23.021 23.021 0 0 1 158.457 9.762 A 19.441 19.441 0 0 1 159.706 8.907 A 7.553 7.553 0 0 1 163.31 7.773 A 9.217 9.217 0 0 1 163.889 7.755 A 9.071 9.071 0 0 1 165.888 7.961 Q 167.179 8.253 168.116 8.959 A 5.081 5.081 0 0 1 169.082 9.917 Q 170.266 11.451 170.61 14.098 A 18.312 18.312 0 0 1 170.751 16.45 L 170.751 30.926 L 168.307 30.926 L 168.307 16.779 A 17.236 17.236 0 0 0 168.216 14.941 Q 168.013 13.059 167.36 11.894 A 4.495 4.495 0 0 0 167.155 11.562 Q 166.004 9.87 163.325 9.87 Q 161.351 9.87 159.777 10.904 A 14.879 14.879 0 0 0 158.587 11.781 Q 158.031 12.231 157.43 12.787 A 34.628 34.628 0 0 0 156.181 14.006 L 156.181 30.926 Z M 109.04 28.341 L 110.356 26.649 Q 111.813 27.824 113.458 28.647 Q 115.103 29.469 117.453 29.469 A 8.237 8.237 0 0 0 118.94 29.344 Q 119.759 29.193 120.4 28.862 A 3.913 3.913 0 0 0 121.354 28.177 A 4.604 4.604 0 0 0 122.254 26.969 A 3.89 3.89 0 0 0 122.67 25.192 A 3.722 3.722 0 0 0 122.501 24.049 A 3.104 3.104 0 0 0 121.848 22.913 Q 121.025 21.996 119.756 21.385 Q 118.487 20.774 117.218 20.304 Q 115.526 19.693 113.881 18.941 A 8.572 8.572 0 0 1 112.065 17.834 A 7.404 7.404 0 0 1 111.155 16.967 A 4.234 4.234 0 0 1 110.162 14.86 A 5.921 5.921 0 0 1 110.074 13.818 A 5.588 5.588 0 0 1 111.825 9.71 A 7.373 7.373 0 0 1 112.001 9.541 Q 113.928 7.755 117.453 7.755 Q 119.333 7.755 121.072 8.437 A 12.701 12.701 0 0 1 122.728 9.221 A 9.769 9.769 0 0 1 124.033 10.105 L 122.811 11.797 Q 121.636 10.951 120.367 10.34 A 6.116 6.116 0 0 0 118.551 9.803 A 7.903 7.903 0 0 0 117.453 9.729 Q 115.845 9.729 114.774 10.211 A 3.509 3.509 0 0 0 113.67 10.975 Q 112.471 12.22 112.471 13.724 A 3.162 3.162 0 0 0 112.619 14.712 A 2.649 2.649 0 0 0 113.247 15.745 A 5.829 5.829 0 0 0 114.26 16.57 A 7.819 7.819 0 0 0 115.244 17.108 Q 116.466 17.672 117.782 18.142 Q 119.521 18.847 121.213 19.576 A 7.952 7.952 0 0 1 123.007 20.631 A 6.894 6.894 0 0 1 123.986 21.573 A 4.272 4.272 0 0 1 124.837 23.214 Q 125.067 24.033 125.067 25.051 Q 125.067 26.79 124.174 28.247 Q 123.281 29.704 121.566 30.597 Q 119.85 31.49 117.359 31.49 A 11.907 11.907 0 0 1 113.751 30.953 A 11.019 11.019 0 0 1 112.729 30.574 A 15.761 15.761 0 0 1 110.425 29.362 A 12.9 12.9 0 0 1 109.04 28.341 Z M 176.109 28.341 L 177.425 26.649 Q 178.882 27.824 180.527 28.647 Q 182.172 29.469 184.522 29.469 A 8.237 8.237 0 0 0 186.009 29.344 Q 186.828 29.193 187.469 28.862 A 3.913 3.913 0 0 0 188.423 28.177 A 4.604 4.604 0 0 0 189.323 26.969 A 3.89 3.89 0 0 0 189.739 25.192 A 3.722 3.722 0 0 0 189.57 24.049 A 3.104 3.104 0 0 0 188.917 22.913 Q 188.094 21.996 186.825 21.385 Q 185.556 20.774 184.287 20.304 Q 182.595 19.693 180.95 18.941 A 8.572 8.572 0 0 1 179.134 17.834 A 7.404 7.404 0 0 1 178.224 16.967 A 4.234 4.234 0 0 1 177.231 14.86 A 5.921 5.921 0 0 1 177.143 13.818 A 5.588 5.588 0 0 1 178.894 9.71 A 7.373 7.373 0 0 1 179.07 9.541 Q 180.997 7.755 184.522 7.755 Q 186.402 7.755 188.141 8.437 A 12.701 12.701 0 0 1 189.797 9.221 A 9.769 9.769 0 0 1 191.102 10.105 L 189.88 11.797 Q 188.705 10.951 187.436 10.34 A 6.116 6.116 0 0 0 185.62 9.803 A 7.903 7.903 0 0 0 184.522 9.729 Q 182.914 9.729 181.843 10.211 A 3.509 3.509 0 0 0 180.739 10.975 Q 179.54 12.22 179.54 13.724 A 3.162 3.162 0 0 0 179.688 14.712 A 2.649 2.649 0 0 0 180.316 15.745 A 5.829 5.829 0 0 0 181.329 16.57 A 7.819 7.819 0 0 0 182.313 17.108 Q 183.535 17.672 184.851 18.142 Q 186.59 18.847 188.282 19.576 A 7.952 7.952 0 0 1 190.076 20.631 A 6.894 6.894 0 0 1 191.055 21.573 A 4.272 4.272 0 0 1 191.906 23.214 Q 192.136 24.033 192.136 25.051 Q 192.136 26.79 191.243 28.247 Q 190.35 29.704 188.635 30.597 Q 186.919 31.49 184.428 31.49 A 11.907 11.907 0 0 1 180.82 30.953 A 11.019 11.019 0 0 1 179.798 30.574 A 15.761 15.761 0 0 1 177.494 29.362 A 12.9 12.9 0 0 1 176.109 28.341 Z M 2.491 30.926 L 0 30.926 L 0 0 L 8.977 0 Q 12.079 0 14.406 0.799 A 7.746 7.746 0 0 1 16.558 1.919 A 6.724 6.724 0 0 1 18.025 3.431 Q 19.155 5.035 19.297 7.537 A 13.014 13.014 0 0 1 19.317 8.272 A 10.493 10.493 0 0 1 19.112 10.404 Q 18.802 11.898 18.025 13.043 A 7.837 7.837 0 0 1 15.107 15.602 A 9.711 9.711 0 0 1 14.405 15.933 A 12.053 12.053 0 0 1 11.586 16.724 A 16.573 16.573 0 0 1 8.977 16.92 L 2.491 16.92 L 2.491 30.926 Z M 94.94 31.49 Q 92.214 31.49 89.887 30.104 A 9.723 9.723 0 0 1 86.724 27.032 A 12.084 12.084 0 0 1 86.151 26.062 A 11.623 11.623 0 0 1 85.031 22.827 Q 84.759 21.442 84.742 19.858 A 19.806 19.806 0 0 1 84.741 19.646 Q 84.741 15.953 86.101 13.303 A 10.491 10.491 0 0 1 86.151 13.207 Q 87.561 10.528 89.887 9.142 Q 92.214 7.755 94.94 7.755 Q 97.666 7.755 99.992 9.142 Q 102.319 10.528 103.753 13.207 A 11.724 11.724 0 0 1 104.912 16.563 Q 105.186 18.001 105.186 19.646 Q 105.186 23.406 103.753 26.062 Q 102.319 28.717 99.992 30.104 Q 97.666 31.49 94.94 31.49 Z M 94.94 29.375 Q 97.149 29.375 98.911 28.153 A 7.757 7.757 0 0 0 101.192 25.656 A 9.691 9.691 0 0 0 101.661 24.746 A 10.82 10.82 0 0 0 102.459 22.056 A 14.684 14.684 0 0 0 102.648 19.646 A 14.615 14.615 0 0 0 102.431 17.069 A 10.947 10.947 0 0 0 101.661 14.523 Q 100.674 12.314 98.911 11.069 Q 97.149 9.823 94.94 9.823 Q 92.731 9.823 90.992 11.069 A 8.026 8.026 0 0 0 88.831 13.418 A 10.15 10.15 0 0 0 88.242 14.523 A 10.922 10.922 0 0 0 87.399 17.395 A 14.582 14.582 0 0 0 87.232 19.646 A 14.207 14.207 0 0 0 87.452 22.208 A 10.554 10.554 0 0 0 88.242 24.746 A 9.244 9.244 0 0 0 89.478 26.743 A 7.624 7.624 0 0 0 90.992 28.153 Q 92.731 29.375 94.94 29.375 Z M 2.491 2.068 L 2.491 14.852 L 8.413 14.852 A 15.916 15.916 0 0 0 10.747 14.692 Q 11.934 14.516 12.896 14.145 A 6.755 6.755 0 0 0 14.594 13.207 A 5.298 5.298 0 0 0 16.563 9.993 A 8.266 8.266 0 0 0 16.732 8.272 A 8.592 8.592 0 0 0 16.563 6.504 Q 16.131 4.451 14.593 3.455 Q 13.092 2.481 10.652 2.191 A 19.026 19.026 0 0 0 8.413 2.068 L 2.491 2.068 Z M 19.975 30.926 L 17.061 30.926 L 8.46 16.215 L 10.716 15.322 L 19.975 30.926 Z" fill="currentColor"/></svg>            </div>
+              
+
+            <!-- Heading -->
+            <p class="lead text-white">
+              The future of personal health <br> monitoring and telehealth services.
+            </p>
+
+          </div>
+          <div class="col-12 mt-auto text-center">
+
+            <!-- Button -->
+            <a class="btn btn-transparent btn-rounded-circle shadow" data-scroll='{"offset": 0}' href="#carousel">
+              <i class="fe fe-arrow-down"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- REMOSENSE SLIDING GALLERY SECTION -->
+    <section class="py-8 py-md-8 pt-lg-10 capsule-background" id = "carousel">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          
+          <!-- Header -->
+          <div class="col-12 text-center">
+            <h2>Remosense is <br>
+              <span class="text-primary" data-typed='{"strings": ["real-time health information", "access to healthcare everywhere", "clinical grade readings"], "startDelay": 1000}'></span></h2>
+            
+          </div>
+
+           <!-- Egg Top -->
+          <div class="row align-items-center justify-content-center">
+           
+            <div class="col-12 text-center align-self-center">
+              <img src="assets/img/tbx/remosense_egg/egg_top.svg" alt="" class="align-text-center capsule">
+            </div>
+          </div>
+
+          <!-- Main Images -->
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-lg-6 text-center align-self-center">
+
+              <!-- CAROUSEL CODE -->
+              <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false"> 
+                
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active align">
+                        <img src="assets/img/tbx/remosense_egg/phones.svg" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item text-center">
+                        <img src="assets/img/tbx/remosense_egg/remosense-top.svg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                </div>
+            </div>
+  
+          </div>
+
+          </div>
+
+          <!-- Egg Bottom -->
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 text-center">
+              <img src="assets/img/tbx/remosense_egg/egg_bottom.svg" alt="" class="align-text-center capsule">
+            </div>
+          </div>
+
+          
+          
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="pt-8 pt-md-8 bg-gradient-light-white" style="background: #0A2841" id = "features">
+      <div class="container" style="background: #0A2841">
+        
+        <!-- HEADING ROW -->
+        <div class="row align-items-center pb-lg-4">
+        
+            <div class="col-12 ">
+              <h2 class="text-white text-center pt-lg-4 ">
+                Leverage the power of Remosense
+               </h2>
+
+               
+            </div>
+          </div> 
+        
+          <!-- SWITCH ROW -->
+          <div class="row align-items-center pb-4">
+           
+            <div class="col-12 text-center">
+             
+              <div class="btn-group">
+                <button type="button" data-toggle="button" class="btn btn-features segmentedButton" id="linkid" data-section="section1" id="option1" aria-pressed="true"> For patients</button>
+      
+                <button type="button" data-toggle="button" class="btn btn-features segmentedButton" data-section="section2" id="option2" aria-pressed="false">
+                  For clinicians
+                </button>
+             
+              </div>
+            </div>
+          </div>
+
+          <!-- ANIMATE SCROLL ROW -->
+          <div class="row align-items-center pb-2">
+            <div class="col-12 d-block d-sm-none">
+              <div class="scroll-down"></div>
+            </div>
+            
+          </div>
+          
+          <!-- TEXT FOR PATIENTS -->
+          <div class="row align-items-center pb-4 content-section open-section section1 ">
+            <div class="col-12">
+            
+              <!-- Text -->
+              <p class="fs-lg text-center text-muted mb-4 pr-md-4 pl-md-4 pt-md-4 d-none d-sm-block">
+                Remosense measures 7 different vital signs with high accuracy, all in one compact, reliable, and clinical-grade device. All data is transmitted via a secure app and stored in our HIPAA, GDPR, ISO compliant cloud.
+              </p>
+            </div>
+          </div>
+                  
+           <!-- FEATURES + SCREENSHOTS ROW FOR PATIENTS -->
+           <div class="row align-items-center pb-4 content-section open-section section1">
+            
+
+            <!-- LIST OF ITEMS PATIENTS -->
+            <div class="col-6 d-none d-lg-block">
+
+              <!-- ACCORDION -->
+              <div class="accordion accordion-flush"  id="accordionFlushExample" style="border-bottom-color: #0A2841; background-color: #0A2841;"> 
+                
+                <!-- HEART RATE ACCORDON ITEM -->
+                <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed btn-block hover-color" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                      
+                      <div class="col-2 text-center">
+                        <!-- Icon -->
+                      <div class="icon text-primary mb-3">
+                        <img class="img-fluid" src="assets/img/tbx/features_icons/hr.svg" alt="...">
+                      </div>
+                      </div>
+                      
+                      <div class="col-10">
+                        <h2 class="text-white btn-block"> Heart Rate </h2>
+                      </div>
+
+                      
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                  </div>
+                </div>
+               <!-- / ACCORDON ITEM -->
+
+                <!-- HRV ACCORDON ITEM -->
+                <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed btn-block hover-color" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                      <div class="col-2 text-center">
+                        <!-- Icon -->
+                      <div class="icon text-primary mb-3">
+                        <img class="img-fluid" src="assets/img/tbx/features_icons/hrv.svg" alt="...">
+                      </div>
+                      </div>
+                      
+                      <div class="col-10">
+                        <h2 class="text-white btn-block"> Heart Rate Variability </h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                  </div>
+                </div>
+               <!-- / ACCORDON ITEM -->
+                
+                <!-- BLOOD PRESSURE ACCORDON ITEM -->
+                <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                      <div class="col-2 text-center">
+                        <!-- Icon -->
+                      <div class="icon text-primary mb-3">
+                        <img class="img-fluid" src="assets/img/tbx/features_icons/bp.svg" alt="...">
+                      </div>
+                      </div>
+                      
+                      <div class="col-10">
+                        <h2 class="text-white btn-block"> Blood Pressure </h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                  </div>
+                </div>
+               <!-- / ACCORDON ITEM -->
+
+               <!-- BLOOD OXYGENTATION ACCORDON ITEM -->
+               <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                    <div class="col-2 text-center">
+                      <!-- Icon -->
+                    <div class="icon text-primary mb-3">
+                      <img class="img-fluid" src="assets/img/tbx/features_icons/bo.svg" alt="...">
+                    </div>
+                    </div>
+                    
+                    <div class="col-10">
+                      <h2 class="text-white btn-block"> Blood Oxygenation </h2>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                </div>
+              </div>
+             <!-- / ACCORDON ITEM -->
+
+              <!-- BODY TEMPERATURE ACCORDON ITEM -->
+              <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                    <div class="col-2 text-center">
+                      <!-- Icon -->
+                    <div class="icon text-primary mb-3">
+                      <img class="img-fluid" src="assets/img/tbx/features_icons/bt.svg" alt="...">
+                    </div>
+                    </div>
+                    
+                    <div class="col-10">
+                      <h2 class="text-white btn-block"> Body Temperature </h2>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                </div>
+              </div>
+             <!-- / ACCORDON ITEM -->
+
+             <!-- ECG ACCORDON ITEM -->
+             <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                  <div class="col-2 text-center">
+                    <!-- Icon -->
+                  <div class="icon text-primary mb-3">
+                    <img class="img-fluid" src="assets/img/tbx/features_icons/ecg.svg" alt="...">
+                  </div>
+                  </div>
+                  
+                  <div class="col-10">
+                    <h2 class="text-white btn-block"> ECG </h2>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+              </div>
+            </div>
+           <!-- / ACCORDON ITEM -->
+
+           <!-- ACCORDON ITEM -->
+           <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+            <h2 class="accordion-header" id="flush-headingSeven" style="border-bottom-color:#0A2841">
+              <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841; border-bottom-color:#0A2841">
+
+                <div class="col-2 text-center">
+                  <!-- Icon -->
+                <div class="icon text-primary mb-3">
+                  <img class="img-fluid" src="assets/img/tbx/features_icons/ds.svg" alt="...">
+                </div>
+                </div>
+                
+                <div class="col-10">
+                  <h2 class="text-white btn-block"> Digital Stethoscope </h2>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+            </div>
+           </div>
+           <!-- / ACCORDON ITEM -->
+           
+          </div>
+            </div>  
+
+            <!-- SCREENSHOT CAROUSEL PATIENTS -->
+            <div class="col-12 col-lg-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                
+                   
+                  <div class="carousel-inner">
+                   
+                    <!-- HEART RATE SCREEN-->
+                    <div class="carousel-item active">
+                      
+                      <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-hr"> 
+                              <i class="img-fluid" alt="..."></i>
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Heart Rate</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+                      
+                      <!-- iphone dashboard -->
+                        
+                      <div class="device device-iphonex">
+
+                        <img src="assets/img/tbx/features/hr.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                      </div>
+                      
+                      
+                    <!-- HRV SCREEN-->
+                    <div class="carousel-item">
+
+                      <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-hrv"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/hrv.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Heart Rate Variability</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+
+                      <!-- iphone dashboard -->
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/hr.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+
+                    <!-- BP SCREEN-->
+                    <div class="carousel-item">
+
+                      <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-bp"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/bp.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Blood Pressure</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+
+                      <!-- iphone dashboard -->
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/bp.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+
+                    <!-- BO SCREEN-->
+                    <div class="carousel-item">
+
+                      <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-bo"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/bo.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Blood Oxygenation</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/oxi.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+
+                    <!-- BT SCREEN-->
+                    <div class="carousel-item">
+
+                     <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-bt"> 
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Body Temperature</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/temp.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+
+                    <!-- ECG SCREEN-->
+                    <div class="carousel-item">
+
+                      <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-ecg"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/ecg.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>ECG</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/ecg.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+
+                    <!-- DS SCREEN-->
+                    <div class="carousel-item">
+
+                      <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-ds"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/ds.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Digital Stethoscope</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+
+                      <div class="device device-iphonex">
+                        <img src="assets/img/tbx/features/steth.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/iphonex.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+
+
+                  </div>
+                                
+              </div>
+              
+            </div> 
+
+
+          
+
+           </div>
+
+           <!-- TEXT FOR CLINICIANS -->
+          <div class="row align-items-center pb-4 content-section section2">
+            <div class="col-12">
+            
+              <!-- Text -->
+              <p class="fs-lg text-center text-muted mb-4 pr-md-4 pl-md-4 pt-md-4 d-none d-sm-block">
+                Remosense provides clinicians with actionable clinical insights that allows them to pinpoit signs of deterioration and quickly direct care.
+              </p>
+            </div>
+          </div>
+                  
+           <!-- FEATURES + SCREENSHOTS ROW FOR CLINICIANS -->
+           <div class="row align-items-center pb-4 content-section section2">
+            
+            <!-- LIST OF ITEMS CLINICIANS-->
+            <div class="col-5 d-none d-lg-block">
+
+              <!-- ACCORDION -->
+              <div class="accordion accordion-flush"  id="accordionFlushExample" style="border-bottom-color: #0A2841; background-color: #0A2841;"> 
+                
+                <!-- HEART RATE ACCORDON ITEM -->
+                <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+                      
+                      <div class="col-2 text-center">
+                        <!-- Icon -->
+                      <div class="icon text-primary mb-3">
+                        <img class="img-fluid" src="assets/img/tbx/features_icons/hr.svg" alt="...">
+                      </div>
+                      </div>
+                      
+                      <div class="col-10">
+                        <h2 class="text-white btn-block"> Heart Rate </h2>
+                      </div>
+
+                      
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                  </div>
+                </div>
+               <!-- / ACCORDON ITEM -->
+
+                <!-- HRV ACCORDON ITEM -->
+                <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                      <div class="col-2 text-center">
+                        <!-- Icon -->
+                      <div class="icon text-primary mb-3">
+                        <img class="img-fluid" src="assets/img/tbx/features_icons/hrv.svg" alt="...">
+                      </div>
+                      </div>
+                      
+                      <div class="col-10">
+                        <h2 class="text-white btn-block"> Heart Rate Variability </h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                  </div>
+                </div>
+               <!-- / ACCORDON ITEM -->
+                
+                <!-- BLOOD PRESSURE ACCORDON ITEM -->
+                <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                      <div class="col-2 text-center">
+                        <!-- Icon -->
+                      <div class="icon text-primary mb-3">
+                        <img class="img-fluid" src="assets/img/tbx/features_icons/bp.svg" alt="...">
+                      </div>
+                      </div>
+                      
+                      <div class="col-10">
+                        <h2 class="text-white btn-block"> Blood Pressure </h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                  </div>
+                </div>
+               <!-- / ACCORDON ITEM -->
+
+               <!-- BLOOD OXYGENTATION ACCORDON ITEM -->
+               <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                    <div class="col-2 text-center">
+                      <!-- Icon -->
+                    <div class="icon text-primary mb-3">
+                      <img class="img-fluid" src="assets/img/tbx/features_icons/bo.svg" alt="...">
+                    </div>
+                    </div>
+                    
+                    <div class="col-10">
+                      <h2 class="text-white btn-block"> Blood Oxygenation </h2>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                </div>
+              </div>
+             <!-- / ACCORDON ITEM -->
+
+              <!-- BODY TEMPERATURE ACCORDON ITEM -->
+              <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="4" aria-current="true" aria-label="Slide 5" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                    <div class="col-2 text-center">
+                      <!-- Icon -->
+                    <div class="icon text-primary mb-3">
+                      <img class="img-fluid" src="assets/img/tbx/features_icons/bt.svg" alt="...">
+                    </div>
+                    </div>
+                    
+                    <div class="col-10">
+                      <h2 class="text-white btn-block"> Body Temperature </h2>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+                </div>
+              </div>
+             <!-- / ACCORDON ITEM -->
+
+             <!-- ECG ACCORDON ITEM -->
+             <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="5" aria-current="true" aria-label="Slide 6" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841;">
+
+                  <div class="col-2 text-center">
+                    <!-- Icon -->
+                  <div class="icon text-primary mb-3">
+                    <img class="img-fluid" src="assets/img/tbx/features_icons/ecg.svg" alt="...">
+                  </div>
+                  </div>
+                  
+                  <div class="col-10">
+                    <h2 class="text-white btn-block"> ECG </h2>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+              </div>
+            </div>
+           <!-- / ACCORDON ITEM -->
+
+           <!-- ACCORDON ITEM -->
+           <div class="accordion-item"  style="border-bottom-color:#0A2841">
+                  
+            <h2 class="accordion-header" id="flush-headingSeven" style="border-bottom-color:#0A2841">
+              <button class="accordion-button hover-color collapsed btn-block" type="button" data-bs-target="#desktopIndicators" data-bs-slide-to="6" aria-current="true" aria-label="Slide 7" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #0A2841; border-bottom-color:#0A2841">
+
+                <div class="col-2 text-center">
+                  <!-- Icon -->
+                <div class="icon text-primary mb-3">
+                  <img class="img-fluid" src="assets/img/tbx/features_icons/ds.svg" alt="...">
+                </div>
+                </div>
+                
+                <div class="col-10">
+                  <h2 class="text-white btn-block"> Digital Stethoscope </h2>
+                </div>
+              </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" style="background-color: #0A2841;" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui, fermentum egestas diam cras at sed nibh bibendum. </div>
+            </div>
+           </div>
+           <!-- / ACCORDON ITEM -->
+           
+          </div>
+            </div>  
+
+            <!-- SCREENSHOT CAROUSEL CLINICIANS -->
+            <div class="col-12 col-lg-7">
+                <div id="desktopIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                       <!-- HEADER FOR MOBILE SCREENS -->
+                       <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center pb-5 pb-md-0">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-hr"> 
+                              <i class="img-fluid" alt="..."></i>
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Heart Rate</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+                      
+                      <div class="device device-macbook">
+
+                       
+
+                        <img src="assets/img/tbx/features/hr_desk.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+                      </div>
+                      
+                    </div>
+                    <div class="carousel-item">
+
+                       <!-- HEADER FOR MOBILE SCREENS -->
+                       <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center pb-5 pb-md-0">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-hrv"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/hrv.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Heart Rate Variability</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+
+                     
+
+                      <div class="device device-macbook">
+
+                        
+                        <img src="assets/img/tbx/features/hr_desk.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                       <!-- HEADER FOR MOBILE SCREENS -->
+                       <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center pb-5 pb-md-0">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-bp"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/bp.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Blood Pressure</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+
+                      <div class="device device-macbook">
+                        <img src="assets/img/tbx/features/bp_desk.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center pb-5 pb-md-0">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-bo"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/bo.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Blood Oxygenation</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+                      <div class="device device-macbook">
+                        <img src="assets/img/tbx/features/oxi_desk.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center pb-5 pb-md-0">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-bt"> 
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Body Temperature</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+                      <div class="device device-macbook">
+                        <img src="assets/img/tbx/features/temp_desk.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                       <!-- HEADER FOR MOBILE SCREENS -->
+                       <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center pb-5 pb-md-0">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-ecg"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/ecg.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>ECG</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+
+                      <div class="device device-macbook">
+                        <img src="assets/img/tbx/features/ecg_desk.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <!-- HEADER FOR MOBILE SCREENS -->
+                      <div class="row d-flex d-block d-sm-none">
+                        
+                        <!-- ICON + TEXT -->
+                        <div class="col-12 text-center pb-5 pb-md-0">   
+                          <span>
+                            
+                            <span class="d-inline-block btn float-right icon-feature icon-ds"> 
+                              <img class="img-fluid " src="assets/img/tbx/features_icons/ds.svg" alt="...">
+                            </span>
+                            <span class="d-inline-block text-white"><h2>Digital Stethoscope</h2</span>
+                            
+                          </span>
+                          
+                             
+                        </div>
+                      
+                       
+                      </div>
+                      <div class="device device-macbook">
+                        <img src="assets/img/tbx/features/steth_desk.png" class="device-screen" alt="...">
+                        <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                                
+              </div>
+              
+            </div> 
+          
+
+           </div>
+
+           <!-- CTA -->
+           <div class="row align-items-center pb-10">
+            <div class="text-center">
+              <a href="contact.html" class="btn text-white rounded-pill btn-outline-white shadow lift me-1">
+                Request a demo
+              </a>
+            </div>
+           </div>
+
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- SOLUTIONS SECTION -->
+    <section class="pt-8 pt-md-11 bg-gradient-light-white" id="solutions">
+      <div class="container">
+
+        <!-- HEADER -->
+        <div class="row align-items-center justify-content-between mb-8 mb-md-6">
+          <div class="col-12">
+            <h2>We are <strong> the solution</strong></h2>
+          </div>
+          <div class="col-12">
+            <h3>Remosense enhances the experience for both <br> patients and healthcare providers.</h3>
+          </div>
+        </div>
+
+        <!-- SOLUTIONS FOR PATIENTS -->
+        <div class="row align-items-center justify-content-between mb-8 mb-md-11">
+          <div class="col-12 col-md-6 order-md-2">
+
+            <!-- Heading -->
+            <h2 class="pb-5 pb-lg-0">
+              For <span class="" style = "color: #0A2841"><strong>patients</strong></span>
+            </h2>
+
+            <!-- List -->
+            <div class="row mt-lg-8">
+              <div class="col-12">
+
+                <!-- Point 1 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+                  
+                  <!-- Icon -->
+                  <div class="icon text-primary">
+                    <img class="img-fluid" src="assets/img/icons/tbx/yoga.svg" alt="...">
+                  </div>
+
+       
+
+                  <div class="ms-5">
+
+                    <!-- Heading -->
+                    <h4 class="mb-1">
+                      Improves patient care quality from the comfort of their homes
+                    </h4>
+
+                  </div>
+
+                </div>
+        
+                <!-- Point 2 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+
+                    <!-- Icon -->
+                    <div class="icon text-primary">
+                      <img class="img-fluid" src="assets/img/icons/tbx/clipboard.svg" alt="...">
+                    </div>
+
+                    <div class="ms-5">
+
+                      <!-- Heading -->
+                      <h4 class="mb-1">
+                        Provides control over personal health data
+                      </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- Point 3 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+
+                  <!-- Icon -->
+                  <div class="icon text-primary">
+                    <img class="img-fluid" src="assets/img/icons/tbx/desktop.svg" alt="...">
+                  </div>
+
+                  <div class="ms-5">
+
+                    <!-- Heading -->
+                    <h4 class="mb-1">
+                      Enables and enhances virtual visits
+                    </h4>
+
+
+                  </div>
+
+                </div>
+
+                <!-- Point 4 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+
+                <!-- Icon -->
+                <div class="icon text-primary">
+                  <img class="img-fluid" src="assets/img/icons/tbx/hosp_person.svg" alt="...">
+                </div>
+
+                <div class="ms-5">
+
+                  <!-- Heading -->
+                  <h4 class="mb-1">
+                    Increases healthcare access for underserved communities
+                  </h4>
+
+                </div>
+
+                </div>
+
+                <!-- Point 5 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+
+                  <!-- Icon -->
+                  <div class="icon text-primary">
+                    <img class="img-fluid" src="assets/img/icons/tbx/person_heart.svg" alt="...">
+                  </div>
+  
+                  <div class="ms-5">
+  
+                    <!-- Heading -->
+                    <h4 class="mb-1">
+                      Simplifies lives of patients
+                    </h4>
+  
+                  </div>
+  
+                  </div>
+
+              </div>
+  
+            </div> <!-- / .row -->
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1">
+
+            <!-- Card -->
+            <div class="card shadow-light-lg d-none d-lg-block">
+
+              <!-- Image -->
+              <img src="assets/img/tbx/sol_patients.png" alt="">
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <!-- SOLUTIONS FOR PROVIDERS -->
+        <div class="row align-items-center justify-content-between mb-5 mb-md-7">
+          <div class="col-12 col-md-6 order-md-1">
+
+            <!-- Heading -->
+            <h2 class="pb-5 pb-lg-0" >
+              For <span class="" style = "color: #0A2841"><strong>providers</strong></span>
+            </h2>
+
+            <!-- List -->
+            <div class="row mt-lg-8">
+              <div class="col-12">
+
+                <!-- Point 1 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+
+                  <div class="icon text-primary">
+                    <img class="img-fluid" src="assets/img/icons/tbx/cash.svg" alt="...">
+                  </div>
+
+                  <div class="ms-5">
+
+                    <!-- Heading -->
+                    <h4 class="mb-1">
+                      Enables new revenue streams
+                    </h4>
+
+                  </div>
+
+                </div>
+        
+                <!-- Point 2 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+
+                  <div class="icon text-primary">
+                    <img class="img-fluid" src="assets/img/icons/tbx/hand.svg" alt="...">
+                  </div>
+
+                    <div class="ms-5">
+
+                      <!-- Heading -->
+                      <h4 class="mb-1">
+                        Extends care outside of the practice
+                      </h4>
+
+                    </div>
+
+                </div>
+
+                <!-- Point 3 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+
+                  <!-- Icon -->
+                  <div class="icon text-primary">
+                    <img class="img-fluid" src="assets/img/icons/tbx/head.svg" alt="...">
+                  </div>
+
+                  <div class="ms-5">
+
+                    <!-- Heading -->
+                    <h4 class="mb-1">
+                      Increases patient's engagement
+                    </h4>
+
+
+                  </div>
+
+                </div>
+
+                <!-- Point 4 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+               
+
+ 
+
+                <!-- Icon -->
+                <div class="icon text-primary">
+                  <img class="img-fluid" src="assets/img/icons/tbx/heart_clipboard.svg" alt="...">
+                </div>
+
+                <div class="ms-5">
+
+                  <!-- Heading -->
+                  <h4 class="mb-1">
+                    Improves the quality of data, diagnoses, and care
+                  </h4>
+
+                </div>
+
+                </div>
+
+                <!-- Point 5 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+               
+
+ 
+
+                  <!-- Icon -->
+                  <div class="icon text-primary">
+                    <img class="img-fluid" src="assets/img/icons/tbx/person_heart.svg" alt="...">
+                  </div>
+  
+                  <div class="ms-5">
+  
+                    <!-- Heading -->
+                    <h4 class="mb-1">
+                      Enhances practice efficiency and reducing human error
+                    </h4>
+  
+                  </div>
+  
+                </div>
+
+                <!-- Point 6 -->
+                <div class="d-flex mb-lg-7 pb-5 pb-lg-0">
+               
+
+                  <!-- Icon -->
+                  <div class="icon text-primary">
+                    <img class="img-fluid" src="assets/img/icons/tbx/bed.svg" alt="...">
+                  </div>
+  
+                  <div class="ms-5">
+  
+                    <!-- Heading -->
+                    <h4 class="mb-1">
+                      Prevents patient's deterioration and rehospitalization
+                    </h4>
+  
+                  </div>
+  
+                </div>
+
+              </div>
+  
+            </div> <!-- / .row -->
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1">
+
+            <!-- Card -->
+            <div class="card shadow-light-lg d-none d-lg-block">
+
+              <!-- Image -->
+              <img src="assets/img/tbx/sol_providers.png" alt="">
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <!-- CTA -->
+        <div class="text-center p-5 p-md-2">
+          <a href="contact.html" class="btn btn-remosense rounded-pill text-md-center shadow lift me-1">
+            <div class="col">
+              Get in touch 
+            </div>
+           
+          </a>
+        </div>
+
+
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- AWARDS AND RECOGNITIONS -->
+    <section class="py-6 py-md-8 border-bottom pt-10 pb-10 pb-lg-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+  
+            <!-- Heading -->
+            <h2>
+              Awards and Recognitions
+            </h2>
+            <p class="lead text-gray-800"> Telebionix has been recognized as a leader in MedTech</p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center justify-content-center pb-lg-8">
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Brand -->
+            <img class="img-fluid mb-2 mb-md-0" src="assets/img/tbx/ifah.svg" alt="...">
+
+
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Brand -->
+            <img class="img-fluid mb-2 mb-md-0" src="assets/img/tbx/fundable.svg" alt="...">
+
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
+
+            <!-- Brand -->
+            <img class="img-fluid mb-2 mb-md-0" src="assets/img/tbx/openbusiness.svg" alt="...">
+
+          </div>
+        </div>
+
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- TESTIMONIAL -->
+    <section class="py-8 py-md-11" style="background: #0A2841">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto mb-5" >
+
+            <!-- Heading -->
+            <h2 class="display-5 text-gray-500">
+              "Remosence will take our knowledge of integrative biomedicine
+              to the next level. A <span class="text-secondary text-white">game-changer</span> in health and disease."
+            </h2>
+
+          </div>
+        </div> <!-- / .row -->
+
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="avatar avatar-xxl">
+              <img class="avatar-img rounded-circle" src="assets/img/tbx/doctor_avatar.png" alt="...">
+            </div>
+          </div>
+          <div class="col ms-n5">
+              <!-- Header -->
+              <h4 class="display-6 text-white"> PROF. DR. ROBERT BAUERNSCHMITT</h4>
+              <p class="fs-lg text-muted mb-6 mb-md-2">
+                Cardiac Surgeon and Biosignal Researcher at the University of Zurich
+              </p>
+          </div>
+
+        </div>
+        
+        
+        
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- NEWS SNIPPET -->
+    <section class="pt-7 pt-md-10">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h3 class="mb-5 text-center text-lg-start mb-lg-0">
+              Latest News
+            </h3>
+
+          </div>
+          <div class="col-12 col-md-auto">
+
+            <!-- Button -->
+            <a href="blog.html" class="btn rounded-pill btn-outline-dark shadow lift me-1 d-none d-lg-block">
+             Read More
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+
+              <!-- Image -->
+              <a class="card-img-top" href="blog-post-1.html">
+
+                <!-- Image -->
+                <img src="assets/img/tbx/blog_media/pepperdine.jpg" alt="..." class="card-img-top">
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  </div>
+                </div>
+
+              </a>
+
+              <!-- Body -->
+              <a class="card-body" href="blog-post-1.html">
+
+                <!-- Heading -->
+                <h3>
+                  Telebionix Ranked Most Fundable Company by Pepperdine Graziadio Business School
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  It is an honor to stand in the winner's circle and has given us renewed focus to continue with our mission to empower doctors and patients.
+                </p>
+
+              </a>
+
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="#!">
+
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <img src="assets/img/tbx/team/barbara.png" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Barbara Perez
+                </h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2021-02-21">Oct 14, 2021</time>
+                </p>
+
+              </a>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+
+              <!-- Image -->
+              <a class="card-img-top" href="blog-post-2.html">
+
+                <!-- Image -->
+                <img src="assets/img/tbx/blog_media/advisory.png" alt="..." class="card-img-top">
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  </div>
+                </div>
+
+              </a>
+
+              <!-- Body -->
+              <a class="card-body" href="blog-post-2.html">
+
+                <!-- Heading -->
+                <h3>
+                  New Medical Advisory Board Members
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  We want to welcome the esteemed Dr. Samer Ellahham, MD, Dr. Robert Bauernschmitt, MD and Dr. Paul R. Vogt, MD to the Telebionix Medical Team.
+                </p>
+
+              </a>
+
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="#!">
+
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <img src="assets/img/tbx/team/barbara.png" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Barbara Perez
+                </h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">July 13, 2021</time>
+                </p>
+
+              </a>
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+            <!-- Card -->
+            <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
+
+              <!-- Image -->
+              <a class="card-img-top" href="blog-post-4.html">
+
+                <!-- Image -->
+                <img src="assets/img/tbx/blog_media/arab.png" alt="..." class="card-img-top">
+
+                <!-- Shape -->
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x text-white">
+                    <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>                  </div>
+                </div>
+
+              </a>
+
+              <!-- Body -->
+              <a class="card-body" href="blog-post-4.html">
+
+                <!-- Heading -->
+                <h3>
+                  Arab Health 2021: A New Medical Device DNA
+                </h3>
+
+                <!-- Text -->
+                <p class="mb-0 text-muted">
+                  Featuring Widy Medina and Anca Petre discuss what is the value medical devices need to bring to the changing healthcare landscape.
+                </p>
+
+              </a>
+
+              <!-- Meta -->
+              <a class="card-meta mt-auto" href="#!">
+
+                <!-- Divider -->
+                <hr class="card-meta-divider">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm me-2">
+                  <img src="assets/img/tbx/team/barbara.png" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <!-- Author -->
+                <h6 class="text-uppercase text-muted me-2 mb-0">
+                  Barbara Perez
+                </h6>
+
+                <!-- Date -->
+                <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                  <time datetime="2019-05-02">July 1, 2021</time>
+                </p>
+
+              </a>
+
+            </div>
+
+          </div>
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CTA -->
+    <section class="pt-10 pt-md-12">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+  
+            <!-- Heading -->
+            <h2 class="" style="color: #0A2841;">
+              We'd love to get in touch with you
+            </h2>
+  
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-7 mb-md-8">
+              Leave us a message and we'll contact you!
+            </p>
+
+            <!-- Button -->
+            <div class="text-center text-md-center pb-10">
+              <a href="contact.html" class="btn btn-remosense rounded-pill shadow lift me-1">
+                Get in touch <i class="fe d-none d-md-center ms-3"></i>
+              </a>
+            </div>
+  
+          </div>
+        </div> <!-- / .row -->
+        
+      </div> 
+    </section>
+
+     <!-- FOOTER WAVE -->
+    <section class="pt-5 pt-lg-10">
+    
+    <div class="position-relative d-none d-xl-block">
+      <div class="shape shape-bottom shape-fluid-x text-bg-800" style="color:#E4F7FF; transform: scaleX(-1);">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg
+           viewBox="0 0 2880 200"
+           fill="none"
+           version="1.1"
+           id="svg4"
+           sodipodi:docname="curve-2.svg"
+           width="2880"
+           height="200"
+           inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+           xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:svg="http://www.w3.org/2000/svg">
+          <defs
+             id="defs8" />
+          <sodipodi:namedview
+             id="namedview6"
+             pagecolor="#ffffff"
+             bordercolor="#666666"
+             borderopacity="1.0"
+             inkscape:pageshadow="2"
+             inkscape:pageopacity="0.0"
+             inkscape:pagecheckerboard="0"
+             showgrid="false"
+             inkscape:zoom="0.55981979"
+             inkscape:cx="1410.2752"
+             inkscape:cy="85.741877"
+             inkscape:window-width="2560"
+             inkscape:window-height="1377"
+             inkscape:window-x="-8"
+             inkscape:window-y="-8"
+             inkscape:window-maximized="1"
+             inkscape:current-layer="svg4"
+             height="57px" />
+          <path
+             d="M 626,166 1.7862891,162.45961 v 43.58867 L 2885.3589,207.83457 2880,168 C 2641.0908,176.62348 2452.1678,11.027642 2213.319,0.866914 2108.721,-3.083523 1800.0683,94.290313 1660,94.290313 1417.7088,92.64458 1219.7537,9.2191886 976.0708,7.5887594 767.62866,8.9660258 626,166 626,166 Z"
+             fill="currentColor"
+             id="path2"
+             sodipodi:nodetypes="ccccccccc" />
+        </svg>
+      </div>
+
+
+    <div class="position-relative d-none d-xl-block">
+      <div class="shape shape-bottom shape-fluid-x text-bg-800" style="color:#015193;">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg
+           viewBox="0 0 2880 200"
+           fill="none"
+           version="1.1"
+           id="svg4"
+           sodipodi:docname="curve-2.svg"
+           width="2880"
+           height="200"
+           inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+           xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+           xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:svg="http://www.w3.org/2000/svg">
+          <defs
+             id="defs8" />
+          <sodipodi:namedview
+             id="namedview6"
+             pagecolor="#ffffff"
+             bordercolor="#666666"
+             borderopacity="1.0"
+             inkscape:pageshadow="2"
+             inkscape:pageopacity="0.0"
+             inkscape:pagecheckerboard="0"
+             showgrid="false"
+             inkscape:zoom="0.55981979"
+             inkscape:cx="1410.2752"
+             inkscape:cy="85.741877"
+             inkscape:window-width="2560"
+             inkscape:window-height="1377"
+             inkscape:window-x="-8"
+             inkscape:window-y="-8"
+             inkscape:window-maximized="1"
+             inkscape:current-layer="svg4"
+             height="57px" />
+          <path
+             d="M 626,166 1.7862891,162.45961 v 43.58867 L 2885.3589,207.83457 2880,168 C 2641.0908,176.62348 2452.1678,11.027642 2213.319,0.866914 2108.721,-3.083523 1800.0683,94.290313 1660,94.290313 1417.7088,92.64458 1219.7537,9.2191886 976.0708,7.5887594 767.62866,8.9660258 626,166 626,166 Z"
+             fill="currentColor"
+             id="path2"
+             sodipodi:nodetypes="ccccccccc" />
+        </svg>
+      </div>
+    
+ 
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-gray-800" style="background: linear-gradient(to bottom, #015193, #4B86A8);">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+    
+            <!-- Brand -->
+            <img src="assets/img/tbx/logo-white.svg" alt="..." class="footer-brand img-fluid mb-2">
+    
+            <!-- Text -->
+            <p class="text-white mb-2">
+              Bringing healthcare to your home.
+            </p>
+    
+           <!-- Social -->
+           <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+            <li class="list-inline-item list-social-item me-3">
+              <a href="https://www.instagram.com/telebionix/" class="text-decoration-none">
+                <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="https://www.facebook.com/Telebionix" class="text-decoration-none">
+                <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item me-3">
+              <a href="https://twitter.com/telebionix" class="text-decoration-none">
+                <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+            <li class="list-inline-item list-social-item">
+              <a href="https://www.linkedin.com/company/telebionix/" class="text-decoration-none">
+                <img src="./assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="...">
+              </a>
+            </li>
+          </ul>
+    
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+    
+          <!-- Heading -->
+          <a href="" class="">
+            <h6 class="fw-bold text-uppercase text-white">
+              Product
+            </h6>
+          </a>
+          
+    
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="./index.html#remosense-banner" class="text-reset">
+                Remosense
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./index.html#features" class="text-reset">
+                Features
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./index.html#solutions" class="text-reset">
+                Solutions
+              </a>
+            </li>
+          </ul>
+    
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+    
+          <!-- Heading -->
+          <a href="/about.html" class="">
+            <h6 class="fw-bold text-uppercase text-white">
+              About Us
+            </h6>
+          </a>
+    
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li class="mb-3">
+              <a href="./about.html#about" class="text-reset">
+                Our Story
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./about.html#team" class="text-reset">
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a href="./about.html#values" class="text-reset">
+                Our Values
+              </a>
+            </li>
+          </ul>
+    
+        </div>
+        <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+    
+          <a href="" class="">
+            <h6 class="fw-bold text-uppercase text-white">
+              Investors
+            </h6>
+          </a>
+    
+          <!-- List -->
+          <ul class="list-unstyled text-muted mb-0">
+            <li class="mb-3">
+              <a href="./investors.html#why" class="text-reset">
+                Why Invest
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./investors.html#partners" class="text-reset">
+                Our Partners
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="./investors.html#investors" class="text-reset">
+                Our Investors
+              </a>
+            </li>
+          </ul>
+    
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+    
+          <!-- Heading -->
+          <a href="./blog.html" class="">
+            <h6 class="fw-bold text-uppercase text-white">
+              News
+            </h6>
+          </a>
+    
+        </div>
+    
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  </body>
+</html>
