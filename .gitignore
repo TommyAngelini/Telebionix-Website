@@ -1,4 +1,3 @@
 html_templates/
 /node_modules/
-dist/
 /src/.DS_Store 
