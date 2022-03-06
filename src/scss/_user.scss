@@ -14,13 +14,13 @@
 
 @media (min-width: 768px) {
     .ecosystem-background {
-        background: transparent url('./assets/img/tbx/ecosystem/arrows.png') no-repeat center center;
+        background: transparent url('{{webRoot}}/assets/img/tbx/ecosystem/arrows.png') no-repeat center center;
     }
 }
 
 @media (min-width: 340px) and (max-width: 767px) {
     .ecosystem-background {
-        background: transparent url('./assets/img/tbx/ecosystem/arrows_vertical.png') no-repeat center center;
+        background: transparent url('{{webRoot}}/assets/img/tbx/ecosystem/arrows_vertical.png') no-repeat center center;
     }
 }
 
@@ -459,7 +459,7 @@
 // background
 @media (min-width: 768px) {
     .capsule-background {
-        background: transparent url('./assets/img/tbx/remosense_egg/circle_background.svg') no-repeat center center;
+        background: transparent url('{{webRoot}}/assets/img/tbx/remosense_egg/circle_background.svg') no-repeat center center;
     }
 }
 
@@ -602,34 +602,34 @@
 }
 
 .icon-hr {
-    background-image: url("/assets/img/tbx/features_icons/hr.svg");
+    background-image: url("{{webRoot}}/assets/img/tbx/features_icons/hr.svg");
 }
 
 .icon-hrv {
-    background-image: url("/assets/img/tbx/features_icons/hrv.svg");
+    background-image: url("{{webRoot}}/assets/img/tbx/features_icons/hrv.svg");
 }
 
 .icon-bp {
-    background-image: url("/assets/img/tbx/features_icons/bp.svg");
+    background-image: url("{{webRoot}}/assets/img/tbx/features_icons/bp.svg");
 }
 
 .icon-bo {
-    background-image: url("/assets/img/tbx/features_icons/bo.svg");
+    background-image: url("{{webRoot}}/assets/img/tbx/features_icons/bo.svg");
 }
 
 .icon-bt {
-    background-image: url("/assets/img/tbx/features_icons/bt.svg");
+    background-image: url("{{webRoot}}/assets/img/tbx/features_icons/bt.svg");
     background-size: auto;
     width: auto;
     height: auto;
 }
 
 .icon-ecg {
-    background-image: url("/assets/img/tbx/features_icons/ecg.svg");
+    background-image: url("{{webRoot}}/assets/img/tbx/features_icons/ecg.svg");
 }
 
 .icon-ds {
-    background-image: url("/assets/img/tbx/features_icons/ds.svg");
+    background-image: url("{{webRoot}}/assets/img/tbx/features_icons/ds.svg");
 }
 
 
