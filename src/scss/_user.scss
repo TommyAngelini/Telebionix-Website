@@ -14,13 +14,13 @@
 
 @media (min-width: 768px) {
     .ecosystem-background {
-        background: transparent url('/assets/img/tbx/ecosystem/arrows.png') no-repeat center center;
+        background: transparent url('./assets/img/tbx/ecosystem/arrows.png') no-repeat center center;
     }
 }
 
 @media (min-width: 340px) and (max-width: 767px) {
     .ecosystem-background {
-        background: transparent url('/assets/img/tbx/ecosystem/arrows_vertical.png') no-repeat center center;
+        background: transparent url('./assets/img/tbx/ecosystem/arrows_vertical.png') no-repeat center center;
     }
 }
 
@@ -459,7 +459,7 @@
 // background
 @media (min-width: 768px) {
     .capsule-background {
-        background: transparent url('/assets/img/tbx/remosense_egg/circle_background.svg') no-repeat center center;
+        background: transparent url('./assets/img/tbx/remosense_egg/circle_background.svg') no-repeat center center;
     }
 }
 
