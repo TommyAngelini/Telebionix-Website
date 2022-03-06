@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Telebionix"}}
+  </head>
+  <body class="bg-light">
+
+    <!-- BUTTON TO SCROLL TO TOP -->
+    <a id="btnScrollToTop" class="btn btn-transparent btn-rounded-circle shadow d-flex justify-content-center align-items-center" data-scroll='{"offset": 0}' href="#hero">
+      <i class="fe fe-arrow-up"></i>        
+  </a>
+
+    <!-- MODALS -->
+    {{> partials/modals}}
+
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-light bg-white" container="container" button="primary"}}
+
+    <!-- WELCOME -->
+    <section data-jarallax data-speed=".8"  id="hero" class="py-10 py-md-14 bg-cover jarallax" style="background-image: url(assets/img/tbx/news_banner.png);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+
+            <!-- Heading -->
+            <h1 class="display-2 fw-bold text-white">
+              Latest News
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <section class="mt-n6">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Form -->
+            <form class="rounded shadow mb-4">
+              <div class="input-group input-group-lg">
+
+                <!-- Text -->
+                <span class="input-group-text border-0 pe-1">
+                  <i class="fe fe-search"></i>
+                </span>
+
+                <!-- Input -->
+                <input class="form-control border-0 px-1" type="text" aria-label="Search our blog..." placeholder="Search our news...">
+
+                <!-- Text -->
+                <span class="input-group-text border-0 py-0 ps-1 pe-3">
+                  <a class="btn btn-sm btn-remosense" href="blog-search.html">
+                    Search
+                  </a>
+                </span>
+
+              </div>
+            </form>
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+
+    <!-- ARTICLES -->
+    <section class="pt-7 pt-md-10 pb-md-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Article 1 -->
+            <div class="card card-row shadow-light-lg mb-6 lift lift-lg" data-aos="fade-up">
+              <div class="row gx-0">
+                <div class="col-12">
+
+                </div>
+                <a class="col-12 col-md-6 order-md-2 bg-cover card-img-end" style="background-image: url(assets/img/tbx/article-1-thumb.png);" href="blog-post-1.html">
+
+                  <!-- Image (placeholder) -->
+                  <img src="assets/img/icons/tbx/person_heart.svg" alt="..." class="img-fluid d-md-none invisible">
+
+                  <!-- Shape -->
+                  <div class="shape shape-start shape-fluid-y text-white d-none d-md-block">
+                    {{> curves/curve-5}}
+                  </div>
+
+                </a>
+                <div class="col-12 col-md-6 order-md-1">
+
+                  <!-- Body -->
+                  <a class="card-body" href="blog-post-1.html">
+
+                    <!-- Heading -->
+                    <h3>
+                      Telebionix Ranked Most Fundable Company by Pepperdine Graziadio Business School
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="mb-0 text-muted">
+                      It is an honor to stand in the winner’s circle and has given us renewed focus to continue with our mission to empower doctors and patients.
+                    </p>
+
+                  </a>
+
+                  <!-- Meta -->
+                  <a class="card-meta" href="blog-post-1.html">
+
+                    <!-- Divider -->
+                    <hr class="card-meta-divider">
+
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm me-2">
+                      <img src="assets/img/tbx/team/barbara.png" alt="..." class="avatar-img rounded-circle">
+                    </div>
+
+                    <!-- Author -->
+                    <h6 class="text-uppercase text-muted me-2 mb-0">
+                      Barbara Perez
+                    </h6>
+
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                      <time datetime="2021-10-14">Oct 14, 2021</time>
+                    </p>
+
+                  </a>
+
+                </div>
+
+              </div> <!-- / .row -->
+            </div>
+
+            <!-- Article 2 -->
+            <div class="card card-row shadow-light-lg mb-6 lift lift-lg" data-aos="fade-up">
+              <div class="row gx-0">
+                <div class="col-12">
+
+                </div>
+                <a class="col-12 col-md-6 order-md-2 bg-cover card-img-end" style="background-image: url(assets/img/tbx/article-3-thumb.png);" href="blog-post-2.html">
+
+                  <!-- Image (placeholder) -->
+                  <img src="assets/img/photos/photo-27.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                  <!-- Shape -->
+                  <div class="shape shape-start shape-fluid-y text-white d-none d-md-block">
+                    {{> curves/curve-5}}
+                  </div>
+
+                </a>
+                <div class="col-12 col-md-6 order-md-1">
+
+                  <!-- Body -->
+                  <a class="card-body" href="blog-post-2.html">
+
+                    <!-- Heading -->
+                    <h3>
+                      New Medical Advisory Board Members
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="mb-0 text-muted">
+                      We want to welcome the esteemed Dr. Samer Ellahham, MD, Dr. Robert Bauernschmitt, MD and Dr. Paul R. Vogt, MD to the Telebionix Medical Team.
+                    </p>
+
+                  </a>
+
+                  <!-- Meta -->
+                  <a class="card-meta" href="blog-post-2.html">
+
+                    <!-- Divider -->
+                    <hr class="card-meta-divider">
+
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm me-2">
+                      <img src="assets/img/tbx/team/barbara.png" alt="..." class="avatar-img rounded-circle">
+                    </div>
+
+                    <!-- Author -->
+                    <h6 class="text-uppercase text-muted me-2 mb-0">
+                      Barbara Perez
+                    </h6>
+
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                      <time datetime="2021-07-13">July 13, 2021</time>
+                    </p>
+
+                  </a>
+
+                </div>
+
+              </div> <!-- / .row -->
+            </div>
+
+            <!-- Article 3 -->
+            <div class="card card-row shadow-light-lg mb-6 lift lift-lg" data-aos="fade-up">
+              <div class="row gx-0">
+                <div class="col-12">
+
+                </div>
+                <a class="col-12 col-md-6 order-md-2 bg-cover card-img-end" style="background-image: url(assets/img/tbx/article-2-thumb.png);" href="blog-post-3.html">
+
+                  <!-- Image (placeholder) -->
+                  <img src="assets/img/photos/photo-27.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                  <!-- Shape -->
+                  <div class="shape shape-start shape-fluid-y text-white d-none d-md-block">
+                    {{> curves/curve-5}}
+                  </div>
+
+                </a>
+                <div class="col-12 col-md-6 order-md-1">
+
+                  <!-- Body -->
+                  <a class="card-body" href="blog-post-3.html">
+
+                    <!-- Heading -->
+                    <h3>
+                      Telebionix Advances to Semi-Finals in Most Fundable Companies Competition
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="mb-0 text-muted">
+                      Our team is advancing to the semi-finals for Pepperdine University’s Most Fundable Companies competition.
+                    </p>
+
+                  </a>
+
+                  <!-- Meta -->
+                  <a class="card-meta" href="blog-post-3.html">
+
+                    <!-- Divider -->
+                    <hr class="card-meta-divider">
+
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm me-2">
+                      <img src="assets/img/tbx/team/barbara.png" alt="..." class="avatar-img rounded-circle">
+                    </div>
+
+                    <!-- Author -->
+                    <h6 class="text-uppercase text-muted me-2 mb-0">
+                      Barbara Perez
+                    </h6>
+
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                      <time datetime="2021-10-14">July 2, 2021</time>
+                    </p>
+
+                  </a>
+
+                </div>
+
+              </div> <!-- / .row -->
+            </div>
+
+            <!-- Article 4 -->
+            <div class="card card-row shadow-light-lg mb-6 lift lift-lg" data-aos="fade-up">
+              <div class="row gx-0">
+                <div class="col-12">
+
+                </div>
+                <a class="col-12 col-md-6 order-md-2 bg-cover card-img-end" style="background-image: url(assets/img/tbx/article-4-thumb.png);" href="blog-post-4.html">
+
+                  <!-- Image (placeholder) -->
+                  <img src="assets/img/photos/photo-27.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                  <!-- Shape -->
+                  <div class="shape shape-start shape-fluid-y text-white d-none d-md-block">
+                    {{> curves/curve-5}}
+                  </div>
+
+                </a>
+                <div class="col-12 col-md-6 order-md-1">
+
+                  <!-- Body -->
+                  <a class="card-body" href="blog-post-4.html">
+
+                    <!-- Heading -->
+                    <h3>
+                      Arab Health 2021: A New Medical Device DNA
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="mb-0 text-muted">
+                      Widy Medina and Anca Petre discuss what is the value medical devices need to bring to the changing healthcare landscape.
+                    </p>
+
+                  </a>
+
+                  <!-- Meta -->
+                  <a class="card-meta" href="blog-post-4.html">
+
+                    <!-- Divider -->
+                    <hr class="card-meta-divider">
+
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm me-2">
+                      <img src="assets/img/tbx/team/barbara.png" alt="..." class="avatar-img rounded-circle">
+                    </div>
+
+                    <!-- Author -->
+                    <h6 class="text-uppercase text-muted me-2 mb-0">
+                      Barbara Perez
+                    </h6>
+
+                    <!-- Date -->
+                    <p class="h6 text-uppercase text-muted mb-0 ms-auto">
+                      <time datetime="2021-07-04">July 4, 2021</time>
+                    </p>
+
+                  </a>
+
+                </div>
+
+              </div> <!-- / .row -->
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- MORE -->
+    <!--
+ <section class="py-7 py-md-10">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9 col-lg-8 col-xl-7">
+
+            <a href="#!" class="btn w-100 btn-outline-gray-300 d-flex align-items-center">
+              <span class="mx-auto">Load more</span> <i class="fe fe-arrow-right"></i>
+            </a>
+
+          </div>
+        </div> 
+      </div> 
+    -->
+   
+    </section>
+
+    <!-- FOOTER WAVE -->
+    <section class="pt-10">
+
+    <div class="position-relative d-none d-xl-block">
+      <div class="shape shape-bottom shape-fluid-x text-bg-800" style="color:#E4F7FF; transform: scaleX(-1);">
+        {{> curves/curve-2}}
+      </div>
+
+
+    <div class="position-relative d-none d-xl-block">
+      <div class="shape shape-bottom shape-fluid-x text-bg-800" style="color:#015193;">
+        {{> curves/curve-2}}
+      </div>
+    
+  
+    </section>
+
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-gray-200"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+
+  </body>
+</html>
