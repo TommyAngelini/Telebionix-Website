@@ -603,7 +603,10 @@
           <div class="col-12 col-md-12 col-lg-10">
 
             <!-- Form -->
-            <form>
+            <form  
+            action="https://formspree.io/f/mnqwvolb"
+            method="POST"
+            >
               <div class="row">
                 <div class="col-12 col-md-6">
                   <div class="form-group mb-5">
@@ -614,7 +617,7 @@
                     </label>
 
                     <!-- Input -->
-                    <input class="form-control" id="contactName" type="text" placeholder="Full name">
+                    <input class="form-control" id="contactName" type="text" name="name" placeholder="Full name">
 
                   </div>
                 </div>
@@ -627,7 +630,7 @@
                     </label>
 
                     <!-- Input -->
-                    <input class="form-control" id="contactEmail" type="email" placeholder="hello@domain.com">
+                    <input class="form-control" id="contactEmail" type="email" name="email" placeholder="hello@domain.com">
 
                   </div>
                 </div>
@@ -642,7 +645,7 @@
                     </label>
 
                     <!-- Input -->
-                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="Tell us what we can help you with!"></textarea>
+                    <textarea class="form-control" id="contactMessage" rows="5" name="message" placeholder="Tell us what we can help you with!"></textarea>
 
                   </div>
                 </div>
