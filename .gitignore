@@ -2,3 +2,7 @@ html_templates/
 /node_modules/
 /src/.DS_Store 
 /docs_o/
+/src/
+package-lock.json
+package.json
+webpack.config.js
